@@ -1,8 +1,10 @@
 window.onload = function(){
-	var a = document.querySelector('a.index');
-	if (a && location.host) a.setAttribute('href','../');
-	Array.from(document.querySelectorAll('[title]')).map(function(a){
+	Array.from(document.querySelectorAll('a')).map(function(a){
 		var l = a.getAttribute('title');
-		a.className = l>=5000 ? 'a' : l>=1000 ? 'b' : l>=500 ? 'c' : l>=100 ? 'd' : '';
+		if (l) a.className = l>=5000 ? 'a' : l>=1000 ? 'b' : l>=500 ? 'c' : l>=100 ? 'd' : '';
+		if (location.host == 'pchat.cf') {
+			var h = a.getAttribute('href');
+			a.setAttribute('href',h=='../index.html'?'../':h.slice(0,-5))
+		}
 	});
 }
