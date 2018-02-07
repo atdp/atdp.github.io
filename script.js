@@ -1,6 +1,6 @@
 window.onload = function(){
 	var s = document.getElementById("search");
-	if (s) s.addEventListener("search", function(e) {
+	s.addEventListener("search", function(e) {
     	if (s.value) window.location = 'https://github.com/search?type=Code&q=user:pch4t+'+encodeURIComponent(s.value);
 	});
 	Array.from(document.querySelectorAll('a')).map(function(a){
