@@ -1,0 +1,494 @@
+<rss version="2.0">
+  <channel>
+    <title>The Internet Classroom 2010: Main</title>
+    <link>The%20Internet%20Classroom%202010%20-%20Main.html</link>
+    <description></description>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <language>en</language>
+    <copyright>All &quot;Internet Classroom&quot; materials copyright © 2010 Alex Hong, Cynthia Nie, and Sam Pierce.</copyright>
+    <lastBuildDate>Fri, 02 Jul 2010 13:45:27 GMT</lastBuildDate>
+    <generator>Io Community Manager</generator>
+    <ttl>60</ttl>
+    <item>
+      <title>I sense there's something in the wind...</title>
+      <link>The%20Internet%20Classroom%202010%20-%20I%20sense%20there's%20something%20in%20the%20wind....html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Projects are due today! If you are turning in a hardcopy, please hand it to Dev before joining your group.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Reminder: there is NO CLASS ON MONDAY. We are meeting on Tuesday at 8:30 instead. Have a happy July 4th weekend.  :)&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;block-tabletype1&quot;&gt;
+    &lt;div class=&quot;block-addtopalign&quot;&gt;
+      &lt;table&gt;
+        &lt;col class=&quot;column0&quot;&gt;
+        &lt;col class=&quot;column1&quot;&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:30 - 9:15&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Lecture: Even more CSS! :O&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:30 - 10:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:00 - 10:30&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Break&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:30 - 11:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;AIC Project Presentations&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:30 - 12:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;TIC&lt;/b&gt; students should be ready for &lt;b&gt;quiz 2&lt;/b&gt; today.&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;AIC&lt;/b&gt; students should reach &lt;b&gt;level 8&lt;/b&gt; today.&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+      <author>(Dev)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/6</guid>
+      <pubDate>Fri, 02 Jul 2010 13:45:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>Given an inch, taken a centimeter</title>
+      <link>The%20Internet%20Classroom%202010%20-%20Given%20an%20inch,%20taken%20a%20centimeter.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;h3&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;Important Notes!&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Please continue to take turns logging into the class site. This seemed to keep our server running Monday.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Grading rubrics for your projects have been added to the project pages (for both &lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/projects/webservice/&quot;&gt;TIC&lt;/a&gt; and &lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/projects/webtech/&quot;&gt;AIC&lt;/a&gt;).&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Your projects are due Friday at the beginning of class. I hope they are going well! Please feel free to ask for help or advice. Don't wait until Thursday night!&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;block-tabletype1&quot;&gt;
+    &lt;div class=&quot;block-addtopalign&quot;&gt;
+      &lt;table&gt;
+        &lt;col class=&quot;column0&quot;&gt;
+        &lt;col class=&quot;column1&quot;&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:30 - 9:15&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Lecture: More CSS!&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;9:15 - 10:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:00 - 10:30&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Break&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:30 - 12:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;TIC&lt;/b&gt; students should reach &lt;b&gt;level 6&lt;/b&gt; today.&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;AIC&lt;/b&gt; students should reach &lt;b&gt;level 7&lt;/b&gt; today.&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/5&quot;&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description>
+      <author>(Dev)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/5</guid>
+      <pubDate>Wed, 30 Jun 2010 13:46:28 GMT</pubDate>
+    </item>
+    <item>
+      <title>Our tubez! Zey are clogged!</title>
+      <link>The%20Internet%20Classroom%202010%20-%20Our%20tubez!%20Zey%20are%20clogged!.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;block-tabletype1&quot;&gt;
+    &lt;div class=&quot;block-addtopalign&quot;&gt;
+      &lt;table&gt;
+        &lt;col class=&quot;column0&quot;&gt;
+        &lt;col class=&quot;column1&quot;&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:30 - 9:15&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Lecture: CSS Basics&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;9:15 - 10:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:00 - 10:30&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Break&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:30 - 11:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;How the Internet Works&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;11:00 - 12:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;TIC&lt;/b&gt; students should reach &lt;b&gt;level 5&lt;/b&gt; today.&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;AIC&lt;/b&gt; students should reach &lt;b&gt;level 6&lt;/b&gt; today and should be ready for &lt;b&gt;quiz 2&lt;/b&gt;.&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/4&quot;&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description>
+      <author>(Dev)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/4</guid>
+      <pubDate>Mon, 28 Jun 2010 14:07:42 GMT</pubDate>
+    </item>
+    <item>
+      <title>If you can read this, maybe our luck has changed...</title>
+      <link>The%20Internet%20Classroom%202010%20-%20If%20you%20can%20read%20this,%20maybe%20our%20luck%20has%20changed....html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;block-tabletype1&quot;&gt;
+    &lt;div class=&quot;block-addtopalign&quot;&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;All students: Please have your class index up and running by the end of the day.&lt;/p&gt;
+      &lt;hr&gt;
+      &lt;table&gt;
+        &lt;col class=&quot;column0&quot;&gt;
+        &lt;col class=&quot;column1&quot;&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:30 - 8:35&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Log in, crash the TIC server&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:35 - 9:20&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Lecture: More HTML, Web Standards&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;9:20 - 10:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:00 - 10:30&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Break&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:30 - 10:45&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/projects/webtech/&quot;&gt;AIC Project 1 Overview&lt;/a&gt;&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:30 - 12:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;br&gt;Finalize TIC Project 1 topics&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;TIC&lt;/b&gt; students should reach &lt;b&gt;level 4&lt;/b&gt; today.&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;AIC&lt;/b&gt; students should reach &lt;b&gt;level 5&lt;/b&gt; today.&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/3&quot;&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description>
+      <author>(Dev)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/3</guid>
+      <pubDate>Fri, 25 Jun 2010 13:57:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>Day 2: Return of the Students!!</title>
+      <link>The%20Internet%20Classroom%202010%20-%20Day%202%20Return%20of%20the%20Students!!.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;block-tabletype1&quot;&gt;
+    &lt;div class=&quot;block-addtopalign&quot;&gt;
+      &lt;table&gt;
+        &lt;col class=&quot;column0&quot;&gt;
+        &lt;col class=&quot;column1&quot;&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:30 - 8:45&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;TAs welcome their groups (parties?)&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:45 - 9:15&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Lecture: Directories/URLs, HTML basics, hyperlinks&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;9:15 - 10:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:00 - 10:30&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Break&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:30 - 10:45&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Lecture: Class Index &amp;amp; Journal Question&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:45 - 11:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/projects/webservice/&quot;&gt;TIC Project 1 Overview&lt;/a&gt;&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:45 - 12:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Questing&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;TIC&lt;/b&gt; students should reach &lt;b&gt;level 3&lt;/b&gt; today&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;AIC&lt;/b&gt; students should reach &lt;b&gt;level 3&lt;/b&gt; today&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/2&quot;&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description>
+      <author>(Dev)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/2</guid>
+      <pubDate>Wed, 23 Jun 2010 13:44:34 GMT</pubDate>
+    </item>
+    <item>
+      <title>LEVEL START</title>
+      <link>The%20Internet%20Classroom%202010%20-%20LEVEL%20START.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;h1&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;&lt;span style=&quot;color: red;&quot;&gt;--&amp;gt; IMPORTANT NOTE &amp;lt;--&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;So our server troubles this morning were more far-reaching than we thought. The server had to restore a backup from about 9 or 10 this morning, so any information that might have been posted since then was lost.&lt;/p&gt;
+  &lt;p&gt;This means that if you registered for an account or posted for quest credit, it may very well be gone now and you will have to do it again. We're sorry for this inconvenience. The 'introduce yourself' thread has been recreated so you can start posting there for credit. &lt;/p&gt;
+  &lt;p&gt;Again, sorry for this, but hopefully it won't happen again! &lt;/p&gt;
+  &lt;hr&gt;
+  &lt;div class=&quot;block-tabletype1&quot;&gt;
+    &lt;div class=&quot;block-addtopalign&quot;&gt;
+      &lt;table&gt;
+        &lt;col class=&quot;column0&quot;&gt;
+        &lt;col class=&quot;column1&quot;&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;8:30 - 9:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Welcome / Attendance / Schedule&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;9:00 - 9:15&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Fire Drill / Introductions&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;9:15 - 10:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Placement Test&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:00 - 10:30&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Break&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:30 - 10:45&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Syllabus Walkthrough &amp;amp; Class Policies&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;odd&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;10:45 - 11:15&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Computer/Website/FTP Crash Course&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;even&quot;&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;11:15 - 12:00&lt;/p&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;p class=&quot;noMargin&quot;&gt;Quest Time&lt;/p&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://virtualatdp.berkeley.edu:8081/tic10/1&quot;&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/1</guid>
+      <pubDate>Mon, 21 Jun 2010 13:28:42 GMT</pubDate>
+    </item>
+    <item>
+      <title>ATDP Orientation 2010</title>
+      <link>The%20Internet%20Classroom%202010%20-%20ATDP%20Orientation%202010.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;p&gt;Welcome to the website for &lt;i&gt;The Internet Classroom&lt;/i&gt;. Please bear with us while we fill up the site with content. In the meantime, check out the &lt;a href=&quot;/tic10/intro/getstart/&quot;&gt;Getting Started&lt;/a&gt; page to learn how to... well, get started.  :x&lt;/p&gt;
+  &lt;p class=&quot;noMargin&quot;&gt;Soooo. Who likes RPGs?  &amp;gt;_&amp;gt;&lt;/p&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/0</guid>
+      <pubDate>Sat, 12 Jun 2010 04:48:56 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

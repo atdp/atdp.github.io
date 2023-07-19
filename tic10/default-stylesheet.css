@@ -1,0 +1,124 @@
+﻿@import url(apollo.css);
+
+/* Apollo: ICE COLD Edition */
+
+/* enable stripe for JS mod */
+#chat-log .say,
+#chat-log .tell,
+#chat-log .emote {
+	padding-left: 1.3846em;
+	border-left: 0.3846em solid;
+}
+
+body 			{ background-color: #182729; } /* body background color */
+#top .text		{ background-color: #2B464A; } /* header background color */
+#sidebar .login { background-color: #2B464A; } /* login box background color */
+
+#sidebar .navigator a:hover, 
+#sidebar .navigator a:focus, 
+#sidebar .navigator a:active,
+#sidebar .calendar a:hover, 
+#sidebar .calendar a:focus, 
+#sidebar .calendar a:active {
+	
+/* sidebar link hover colors */
+	color: #fff;
+	background-color: #92B9C0;
+}
+
+#main .path, #main th, 
+#sidebar .calendar td .current, 
+#sidebar .calendar .days th, #bottom { 
+
+/* site path, table header, and site footer colors */
+	color: #fff;
+	background-color: #4F8088;
+}
+
+#main .site-info td:first-child, 
+#main .path + table td:first-child { 
+
+/* use same colors as above */
+	color: #fff;
+	background-color: #4F8088; 
+}
+
+.forumCode .block-bestof ul {
+	margin: 0.7592em 0 0.7692em 1em;
+}
+
+.forumCode .block-bestof li {
+	list-style-type: none;
+	padding-left: 2em;
+	text-indent: -1em;
+	border-left: 1px solid #808080;
+}
+
+.forumCode .block-tabletype1 .block-compact td {
+	font-size: 84.62%;
+	line-height: 1.5455em;
+	padding: 0.1818 0.3636em;
+	vertical-align: top;
+}
+
+/* CUL */
+
+#chat-users a {
+	height: auto;
+	width: 13.1818em;
+	padding: 1px 0;
+	background: #f0f0f0 url("http://virtualatdp.berkeley.edu:8081/draft/files/styles/images/split.png") center repeat-x;
+}
+
+#chat-users .watchers {
+	width: 12.8182em;
+}
+
+#chat-users a .username {
+	background-image: none;
+}
+
+#chat-users a .username,
+#chat-users a .away-message {
+	display: inline;
+	padding: 0.3636em;
+}
+
+#chat-users a .away-message {
+	padding-right: 13em;
+}
+
+#chat-users a .avatar {
+	display: none;
+}
+
+#chat-users a:hover .username,
+#chat-users a:focus .username,
+#chat-users a:active .username {
+	background: transparent;
+}
+
+#chat-log .dex {
+	font-size: 84.62%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.3636em;
+	padding: 0.2727em 0.9091em 0.2727em 2.0909em;
+	border-left: 0;
+	color: #fff;
+	background: #4F8088;
+	border-bottom: 1px solid #c0c0c0 !important;
+	margin-bottom: -1px;
+	text-indent: -1.1818em;
+}
+
+#chat-log .dex b {
+	font-size: 109.09%;
+}
+
+#chat-log .dex > b {
+	display: none;
+}
+
+#chat-log .dex + .dex {
+	margin-top: -0.5455em;
+}

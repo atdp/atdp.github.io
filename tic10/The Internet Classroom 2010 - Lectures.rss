@@ -1,0 +1,428 @@
+<rss version="2.0">
+  <channel>
+    <title>The Internet Classroom 2010: Lectures</title>
+    <link>The%20Internet%20Classroom%202010%20-%20Lectures-2.html</link>
+    <description></description>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <language>en</language>
+    <copyright>All &quot;Internet Classroom&quot; materials copyright © 2010 Alex Hong, Cynthia Nie, and Sam Pierce.</copyright>
+    <lastBuildDate>Wed, 30 Jun 2010 16:47:47 GMT</lastBuildDate>
+    <generator>Io Community Manager</generator>
+    <ttl>60</ttl>
+    <item>
+      <title>More CSS</title>
+      <link>The%20Internet%20Classroom%202010%20-%20More%20CSS.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;Block vs Inline&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;Inline elements&lt;/b&gt; do not start a new line and stay within the flow of a paragraph. They take up only as much space on the page as they need. Examples: a, em, strong, img&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;&lt;b&gt;Block elements&lt;/b&gt; are treated like little boxes stacked up on the page. They take up as much horizontal space as they are given, but only as much vertical space as they need. Examples: header elements, p, ul/ol, li, dl, table&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;Box Model&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;All block elements follow the box model: &lt;a href=&quot;http://atdpmanila.berkeley.edu/~rastley/2dboxmodel.png&quot;&gt;2dboxmodel.png&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;margin -&amp;gt; border -&amp;gt; padding -&amp;gt; content&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;The width and height of an element only defines the content itself: it does not include padding/margin/border&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Alternatively, if it helps you visualize better... &lt;a href=&quot;http://www.hicksdesign.co.uk/boxmodel/&quot;&gt;3d box model&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;IDs/Classes&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Will help you create more ways of identifying your code, so that you can apply styles to more unique situations&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;IDs can be accessed by using a pound sign (#) and may only be used ONCE in a document. These are especially good for marking off clear sections in your website, like &amp;quot;navigation&amp;quot; or &amp;quot;content&amp;quot; or &amp;quot;header&amp;quot;, etc.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Classes can be accessed by using a period and can be used repeatedly in a document. Note: Always try to use descendent selectors or IDs before resorting to classes. In many cases, you can access the element you want with the previous two methods. Failure to properly markup your document can result in class abuse.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;span and div: generic inline and block tags, respectively, for use in conjunction with IDs and classes.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;External Stylesheet&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;To create an external CSS file, open a new Notepad document and save it with a .css extension (remember to switch the &amp;quot;Save As&amp;quot; drop-down to &amp;quot;All Files&amp;quot;). ONLY put CSS in this file, no HTML (like &amp;lt;style&amp;gt;).&lt;/p&gt;
+  &lt;p class=&quot;noMargin&quot;&gt;Then, in your HTML file, add the following to your &amp;lt;head&amp;gt;:&lt;/p&gt;
+  &lt;pre class=&quot;code&quot;&gt;      &amp;lt;link href=&amp;quot;filename.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; /&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/lectures/8</guid>
+      <pubDate>Wed, 30 Jun 2010 16:47:47 GMT</pubDate>
+    </item>
+    <item>
+      <title>CSS Basics</title>
+      <link>The%20Internet%20Classroom%202010%20-%20CSS%20Basics.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;p class=&quot;noMargin&quot;&gt;Concepts covered&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;CSS Syntax: selector { property: value; }&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Descendant selectors&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Pseudo-selectors&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;hr&gt;
+  &lt;pre class=&quot;code&quot;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Strict//EN&amp;quot;
+&amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&amp;quot;&amp;gt;
+
+&amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;
+
+&amp;lt;head&amp;gt;
+  &amp;lt;title&amp;gt;CSS 101&amp;lt;/title&amp;gt;
+&amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html;charset=utf-8&amp;quot; /&amp;gt;
+
+
+&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;
+
+body {
+  background-image: url(&amp;quot;hero.gif&amp;quot;);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+p {      
+  color: DarkViolet;
+  font-weight: bold;
+}
+
+h1 {
+  color: CadetBlue;
+  text-decoration: overline underline;
+  
+  text-align: center;
+  font-size: 2em;
+
+  font-family: &amp;quot;Trebuchet MS&amp;quot;, Arial, Verdana, sans-serif;
+
+  background-color: #000;
+}
+
+ul {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ol ul {
+  color: yellow;
+}
+
+em, h2 {
+  font-size: 64px;
+  color: red;
+  font-style: normal;
+}
+
+a:link {
+  color: yellow;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+&amp;lt;/style&amp;gt;
+
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+
+&amp;lt;h1&amp;gt;Tired of black and white? Me too!&amp;lt;/h1&amp;gt;
+
+&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in facilisis sapien. Etiam sit amet sem elit. Integer vitae justo justo, et venenatis ante. Quisque tellus velit, tempor vitae consectetur id, molestie non quam. Aliquam tincidunt, ante et interdum pharetra, quam risus auctor felis, vitae commodo urna dolor eu nunc. Suspendisse ut porta est. &amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;Proin consequat convallis erat, et vehicula nibh pretium non. Nullam a dolor id leo interdum sagittis eu id odio. Maecenas congue enim nec nunc pharetra vel dapibus elit cursus. Vivamus ante elit, vulputate id hendrerit consequat, condimentum a metus. &amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;Mauris porttitor, metus sed imperdiet semper, turpis dolor egestas lorem, tristique porta libero neque sit amet tellus. Praesent tempor luctus libero, vel hendrerit justo commodo gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&amp;lt;/p&amp;gt;
+
+&amp;lt;h2&amp;gt;If it's latin, it must be important&amp;lt;/h2&amp;gt;
+
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Donec sed orci eu massa tempor faucibus id in justo.
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;em&amp;gt;Lorem&amp;lt;/em&amp;gt; ipsum dolor sit amet, consectetur adipiscing elit.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Donec sed orci eu massa tempor faucibus id in justo.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Sed tristique massa eget arcu dapibus eu sagittis turpis bibendum.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Sed tristique massa eget arcu dapibus eu sagittis turpis bibendum.&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;asdf.html&amp;quot;&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;somewhere.html&amp;quot;&amp;gt;Donec sed orci eu massa tempor faucibus id in justo.&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Sed tristique massa eget arcu dapibus eu sagittis turpis bibendum.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/lectures/7</guid>
+      <pubDate>Mon, 28 Jun 2010 16:44:55 GMT</pubDate>
+    </item>
+    <item>
+      <title>XHTML Standards Compliance</title>
+      <link>The%20Internet%20Classroom%202010%20-%20XHTML%20Standards%20Compliance.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;Standards Compliance Rules&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Also found here if you prefer: &lt;a href=&quot;http://atdpmanila.berkeley.edu/~rastley/standards.html&quot;&gt;~rastley/standards.html&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;The three things you need in all of your HTML documents. (Note: you still give all your documents a .html extension, despite our use of the term XHTML.)&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p&gt;Add a &amp;quot;DOCTYPE&amp;quot; declaration to all your documents.&lt;/p&gt;
+      &lt;pre class=&quot;code&quot;&gt;      &amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Strict//EN&amp;quot; 
+      &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&amp;quot;&amp;gt;&lt;/pre&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Your beginning &amp;lt;html&amp;gt; tag shall henceforth look like this:&lt;/p&gt;
+      &lt;pre class=&quot;code&quot;&gt;      &amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot; xml:lang=&amp;quot;en&amp;quot; lang=&amp;quot;en&amp;quot;&amp;gt;&lt;/pre&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;And you must include the following tag within your &amp;lt;head&amp;gt; &amp;lt;/head&amp;gt; section:&lt;/p&gt;
+      &lt;pre class=&quot;code&quot;&gt;      &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot;/&amp;gt;&lt;/pre&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;XHTML rules (most of which you've already been doing!)&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Tag contents should always be lowercase.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Tags that have attributes defined in them must have quotation marks, either a single or double.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;All tags must have an accompanying closing tag, even &amp;quot;empty&amp;quot; tags.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Nest your tags properly: First In, Last Out as they say. (i.e. &amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;, NOT &amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;)&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p class=&quot;noMargin&quot;&gt;Do not use deprecated tags or attributes, or &amp;quot;out of date&amp;quot; tags. Check the book or Google to see if a tag is deprecated or just try it and see if your page validates.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class=&quot;noMargin&quot;&gt;All pages that you make must have a validation link on them for both HTML and CSS. It might look something like this:&lt;/p&gt;
+  &lt;pre class=&quot;code&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://validator.w3.org/check?uri=referer&amp;quot;&amp;gt;XHTML 1.0&amp;lt;/a&amp;gt;,
+&amp;lt;a href=&amp;quot;http://jigsaw.w3.org/css-validator/check/referer&amp;quot;&amp;gt;CSS 2.0&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/lectures/5</guid>
+      <pubDate>Fri, 25 Jun 2010 18:01:20 GMT</pubDate>
+    </item>
+    <item>
+      <title>Tables</title>
+      <link>The%20Internet%20Classroom%202010%20-%20Tables.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;pre class=&quot;code&quot;&gt;&amp;lt;table border=&amp;quot;1&amp;quot;&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;th&amp;gt;number&amp;lt;/th&amp;gt;
+&amp;lt;th&amp;gt;letter&amp;lt;/th&amp;gt;
+&amp;lt;th&amp;gt;punctuation&amp;lt;/th&amp;gt;
+&amp;lt;th&amp;gt; ... &amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td rowspan=&amp;quot;2&amp;quot;&amp;gt;1&amp;lt;/td&amp;gt;
+&amp;lt;td colspan=&amp;quot;2&amp;quot;&amp;gt;a!&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;...&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;b&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;*&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;...&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/lectures/4</guid>
+      <pubDate>Fri, 25 Jun 2010 17:58:19 GMT</pubDate>
+    </item>
+    <item>
+      <title>Lists</title>
+      <link>The%20Internet%20Classroom%202010%20-%20Lists.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;pre class=&quot;code&quot;&gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;list item
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;sublist item&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;sublist item&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;sublist item
+      &amp;lt;ol&amp;gt;
+        &amp;lt;li&amp;gt;sublist item&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;sublist item&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;sublist item&amp;lt;/li&amp;gt;
+      &amp;lt;/ol&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;oops I forgot one.  :(&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+
+&amp;lt;dl&amp;gt;
+&amp;lt;dt&amp;gt;BANANA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;A nummy yellow fruit. OM NOM NOM NOM NOM.&amp;lt;/dd&amp;gt;
+&amp;lt;dt&amp;gt;BANANA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;A nummy yellow fruit. OM NOM NOM NOM NOM.&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;Really good for tripping people.&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;Really good for tripping people.&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;Really good for tripping people.&amp;lt;/dd&amp;gt;
+&amp;lt;dt&amp;gt;BANANA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;A nummy yellow fruit. OM NOM NOM NOM NOM.&amp;lt;/dd&amp;gt;
+&amp;lt;dt&amp;gt;BANANA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;A nummy yellow fruit. OM NOM NOM NOM NOM.&amp;lt;/dd&amp;gt;
+&amp;lt;/dl&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/lectures/3</guid>
+      <pubDate>Fri, 25 Jun 2010 17:56:05 GMT</pubDate>
+    </item>
+    <item>
+      <title>Directory Linking Fun</title>
+      <link>The%20Internet%20Classroom%202010%20-%20Directory%20Linking%20Fun.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;cats.html&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;pre class=&quot;code&quot;&gt;&amp;lt;html&amp;gt;
+
+&amp;lt;head&amp;gt;  
+  &amp;lt;title&amp;gt;cats&amp;lt;/title&amp;gt;  
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;big_cats/index.html&amp;quot;&amp;gt;big cats&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;../dogs/index.html&amp;quot;&amp;gt;dogs&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;../birds/index.html&amp;quot;&amp;gt;birds&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;cats.jpg&amp;quot; alt=&amp;quot;kitties&amp;quot; /&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/lectures/2</guid>
+      <pubDate>Wed, 23 Jun 2010 18:31:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>HTML Basics</title>
+      <link>The%20Internet%20Classroom%202010%20-%20HTML%20Basics.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;pre class=&quot;code&quot;&gt;&amp;lt;html&amp;gt;
+
+&amp;lt;head&amp;gt;
+&amp;lt;title&amp;gt;This is my title&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+
+&amp;lt;h1&amp;gt;biggest header&amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;next biggest header&amp;lt;/h2&amp;gt;
+&amp;lt;h3&amp;gt;next next biggest header&amp;lt;/h3&amp;gt;
+&amp;lt;h4&amp;gt;next next next biggest header&amp;lt;/h4&amp;gt;
+&amp;lt;h5&amp;gt;next next next next biggest header&amp;lt;/h5&amp;gt;
+&amp;lt;h6&amp;gt;next next next next next biggest header&amp;lt;/h6&amp;gt;
+
+&amp;lt;p&amp;gt;sldkfasj df;ksadfjsl;dkfj ;lsk fj;laskdfj 
+sdfklj;woekfasj df;ksadfjsl;dkfj ;lsk fj;laskdfj 
+sdfklj;woetuoe4utoiuoiuf
+sdfsdfasdfsadfkfasj df;ksadfjsl;dkfj ;lsk fj;laskdfj 
+sdfklj;woetuoe4utoiuoiuf
+sdfsdfasdfsadftuoe4utoiuoiuf
+sdfsdfasdfsadf&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;ejwlelekjrwekrjlskjdfs
+sdfkjalkdflklekjrwekrjlskjdfs
+sdfkjalkd &amp;lt;em&amp;gt;flk&amp;lt;/em&amp;gt; lekjrwekrjlskjdfs
+sdfkjalkdflklekjrwekrjlskjdfs
+sdfkjalkdflklek&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;jrwekr&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;jlskjdfs
+sdfkjalkdflkkjrwekrjlskjdfs
+sdfkjalkdflks&amp;lt;/p&amp;gt;
+
+
+&amp;lt;a href=&amp;quot;http://www.youtube.com/&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;pocky.jpg&amp;quot; alt=&amp;quot;strawberry Pocky&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+
+&amp;lt;/body&amp;gt;
+
+&amp;lt;/html&amp;gt;&lt;/pre&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/lectures/1</guid>
+      <pubDate>Wed, 23 Jun 2010 18:27:21 GMT</pubDate>
+    </item>
+    <item>
+      <title>FTP 101</title>
+      <link>The%20Internet%20Classroom%202010%20-%20FTP%20101.html</link>
+      <description>&lt;div class=&quot;forumCode&quot;&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;Using an FTP Program&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;On the TMF lab computers: Start Menu &amp;gt; All Programs &amp;gt; Networking &amp;gt; WinSCP SFTP.&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Host name:&lt;/b&gt; atdpmanila.berkeley.edu&lt;br&gt;&lt;b&gt;Username&lt;/b&gt;: First initial + last name&lt;br&gt;&lt;b&gt;Password&lt;/b&gt;: First initial + last initial + birthdate (mmddyy)&lt;/p&gt;
+  &lt;p&gt;Ex, if your name is James Bond, and your birthday is 05/16/85, your login information will be: &lt;br&gt;&lt;b&gt;Username&lt;/b&gt;: jbond&lt;br&gt;&lt;b&gt;Password&lt;/b&gt;: jb051685&lt;/p&gt;
+  &lt;p&gt;Under &amp;quot;Protocol&amp;quot;, make sure you change it to &amp;quot;FTP&amp;quot;. And make sure you're putting your files in the &amp;quot;Sites&amp;quot; folder!&lt;/p&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;To FTP from home: &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Download an FTP client at home to use. There are many free ones: &lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;Mac:&lt;/b&gt; &lt;a href=&quot;http://fetchsoftworks.com/Fetch5.dmg&quot;&gt;Fetch&lt;/a&gt;, &lt;a href=&quot;http://s3.amazonaws.com/stairways/interarchy-801.dmg&quot;&gt;Interarchy&lt;/a&gt;, &lt;a href=&quot;http://www.panic.com/transmit/d/Transmit%203.5.3.dmg&quot;&gt;Transmit&lt;/a&gt;, &lt;a href=&quot;http://cyberduck.ch/&quot;&gt;Cyberduck&lt;/a&gt;&lt;br&gt;&lt;b&gt;Windows:&lt;/b&gt; &lt;a href=&quot;http://winscp.net/eng/index.php&quot;&gt;WinSCP FTP&lt;/a&gt; (the program we use in the lab), &lt;a href=&quot;http://www.vandyke.com/download/absoluteftp/index.html&quot;&gt;AbsoluteFTP&lt;/a&gt;, &lt;a href=&quot;http://www.download.com/SmartFTP-Client/3000-2160_4-10543387.html?tag=pop&quot;&gt;SmartFTP&lt;/a&gt;, &lt;a href=&quot;http://www.download.com/AceFTP/3000-2160_4-10503436.html?tag=lst-0-2&quot;&gt;AceFTP&lt;/a&gt;, &lt;a href=&quot;http://www.download.com/WS-FTP-Home/3000-2160_4-10404472.html?tag=lst-0-7&quot;&gt;WS_FTP&lt;/a&gt;, &lt;a href=&quot;http://www.download.com/FTP/3150-2160_4-0.html?tag=dir&quot;&gt;anything else on download.com for FTP&lt;/a&gt;&lt;/p&gt;
+  &lt;div class=&quot;h2&quot;&gt;
+    &lt;p class=&quot;noMargin&quot;&gt;Another way to FTP (requires no downloading!)&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;noMargin&quot;&gt;There's a neat website called &lt;a href=&quot;http://net2ftp.com/&quot;&gt;Net2FTP&lt;/a&gt; that will let you FTP through your web browser. It can be a little clunky for uploading, but not having to download a program is pretty cool.&lt;/p&gt;
+&lt;/div&gt;</description>
+      <author>(kass)</author>
+      <guid>http://virtualatdp.berkeley.edu:8081/tic10/lectures/0</guid>
+      <pubDate>Tue, 22 Jun 2010 00:19:43 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

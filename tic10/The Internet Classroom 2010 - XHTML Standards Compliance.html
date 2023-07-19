@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <title>The Internet Classroom 2010: XHTML Standards Compliance</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://virtualatdp.berkeley.edu:8081/tic10/lectures/5.rss">
+    <link rel="stylesheet" type="text/css" title="Default" href="default-stylesheet.css">
+    <script type="text/javascript" src="Server%20Error.html"></script>
+  </head>
+  <body>
+    <div id="top">
+      <div class="text">The Internet Classroom 2010</div>
+      <div class="image1"></div>
+      <div class="image2"></div>
+      <div class="image3"></div>
+    </div>
+    <div id="main">
+      <div class="view">
+        <div class="title">XHTML Standards Compliance</div>
+        <div class="path"><a href="The%20Internet%20Classroom%202010%20-%20Main.html">Main</a> &gt; <a href="The%20Internet%20Classroom%202010%20-%20Lectures-2.html">Lectures</a></div>
+        <div class="posts">
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+          <div class="even">
+            <div class="post">
+              <table class="details">
+                <col class="column0">
+                <tr class="even">
+                  <td>2010/06/25 11:01:19 PDT by <a href="The%20Internet%20Classroom%202010%20-%20kass.html">kass</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <div class="h2">
+                  <p class="noMargin">Standards Compliance Rules</p>
+                </div>
+                <p>Also found here if you prefer: <a href="http://atdpmanila.berkeley.edu/~rastley/standards.html">~rastley/standards.html</a></p>
+                <p>The three things you need in all of your HTML documents. (Note: you still give all your documents a .html extension, despite our use of the term XHTML.)</p>
+                <ul>
+                  <li>
+                    <p>Add a &quot;DOCTYPE&quot; declaration to all your documents.</p>
+                    <pre class="code">      &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; 
+      &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</pre>
+                  </li>
+                  <li>
+                    <p>Your beginning &lt;html&gt; tag shall henceforth look like this:</p>
+                    <pre class="code">      &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;</pre>
+                  </li>
+                  <li>
+                    <p>And you must include the following tag within your &lt;head&gt; &lt;/head&gt; section:</p>
+                    <pre class="code">      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;</pre>
+                  </li>
+                </ul>
+                <p>XHTML rules (most of which you've already been doing!)</p>
+                <ul>
+                  <li>
+                    <p class="noMargin">Tag contents should always be lowercase.</p>
+                  </li>
+                  <li>
+                    <p class="noMargin">Tags that have attributes defined in them must have quotation marks, either a single or double.</p>
+                  </li>
+                  <li>
+                    <p class="noMargin">All tags must have an accompanying closing tag, even &quot;empty&quot; tags.</p>
+                  </li>
+                  <li>
+                    <p class="noMargin">Nest your tags properly: First In, Last Out as they say. (i.e. &lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;, NOT &lt;strong&gt;&lt;em&gt;&lt;/strong&gt;&lt;/em&gt;)</p>
+                  </li>
+                  <li>
+                    <p class="noMargin">Do not use deprecated tags or attributes, or &quot;out of date&quot; tags. Check the book or Google to see if a tag is deprecated or just try it and see if your page validates.</p>
+                  </li>
+                </ul>
+                <p class="noMargin">All pages that you make must have a validation link on them for both HTML and CSS. It might look something like this:</p>
+                <pre class="code">&lt;p&gt;&lt;a href=&quot;http://validator.w3.org/check?uri=referer&quot;&gt;XHTML 1.0&lt;/a&gt;,
+&lt;a href=&quot;http://jigsaw.w3.org/css-validator/check/referer&quot;&gt;CSS 2.0&lt;/a&gt;&lt;/p&gt;</pre>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post">
+              <table class="details">
+                <col class="column0">
+                <tr class="even">
+                  <td>2010/06/25 11:03:04 PDT by <a href="The%20Internet%20Classroom%202010%20-%20kass.html">kass</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p>WHAT DOES <b>STANDARDS</b> MEAN?</p>
+                <p>- A set of rules/guidelines that people agree on.</p>
+                <p>- PENCIL LEAD: .5, .7.<br>- Number 2 pencils only for scantrons.  :O</p>
+                <p>- Power Outlets<br>- Imagine if every company decided to use a different number of prongs for their appliances.  &gt;_&gt;;</p>
+                <p>- 2 most popular browsers: Internet Explorer vs Netscape Navigator<br>- Wanted moar users. Did whatever they could to gain users.<br>- Netscape had &lt;blink&gt; tags.   &gt;_&gt;<br>- IE fought back with &lt;marquee&gt; tags.<br>- Even the same tags looked different in both browsers<br>  - &quot;if you're using Netscape, click here. if you're using IE, click here.&quot;<br>- RABBLE RABBLE RABBLE RABBLE RABBLE RABBLE </p>
+                <p>- Enter the W3C: World Wide Web Consortium.<br>  - Tim Berners Lee<br>- Came up with &quot;standards&quot; for HTML</p>
+                <p>- IE winz the original browser wars. Through cheap bundling tactics. qq.<br>- Microsoft has the monopoly on browser market. And thus stops caring about supporting standards and innovation. GRRRrrrrRRrrRRrr.<br>- Netscape ---&gt; Mozilla + Firefox.<br>- Firefox's gain in market share made Microsoft panic.<br>- Today, MOST web browsers are supporting standards.</p>
+                <p class="noMargin">- In this class, we will all be implementing pages according to the XHTML 1.0 strict standard.</p>
+              </div>
+            </div>
+          </div>
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="navigator">
+        <p><a href="The%20Internet%20Classroom%202010%20-%20Main.html"><img src="minus.png" alt="-">Main</a></p>
+        <div class="children">
+          <p><a href="The%20Internet%20Classroom%202010%20-%20Introduction-2.html"><img src="plus.png" alt="+">Introduction</a></p>
+          <p><a href="The%20Internet%20Classroom%202010%20-%20Roster.html"><img src="blank.png" alt=" ">Roster</a></p>
+          <p><a href="The%20Internet%20Classroom%202010%20-%20Lectures-2.html"><img src="blank.png" alt=" ">Lectures</a></p>
+          <div class="children"></div>
+          <p><a href="The%20Internet%20Classroom%202010%20-%20Projects.html"><img src="plus.png" alt="+">Projects</a></p>
+          <p><a href="The%20Internet%20Classroom%202010%20-%20Quest%20Log-2.html"><img src="plus.png" alt="+">Quest Log</a></p>
+          <p><a href="The%20Internet%20Classroom%202010%20-%20Forums.html"><img src="plus.png" alt="+">Forums</a></p>
+          <p><a href="The%20Internet%20Classroom%202010%20-%20Chat.html"><img src="blank.png" alt=" ">Chat</a></p>
+        </div>
+        <p><a href="The%20Internet%20Classroom%202010%20-%20User%20List.html">User List</a></p>
+        <p><a href="The%20Internet%20Classroom%202010%20-%20Activity%20Tracker.html">Activity Tracker</a></p>
+      </div>
+      <div class="login">
+        <p>Not logged in.</p>
+        <p class="noMargin"><a href="/login/login?path=tic10/lectures/5">Log In</a><br><a href="/login/register?path=tic10/lectures/5">Create New User</a></p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div class="text">All &quot;Internet Classroom&quot; materials copyright © 2010 Alex Hong, Cynthia Nie, and Sam Pierce.</div>
+      <div class="powered-by">Powered by Io Community Manager</div>
+    </div>
+  </body>
+</html>
