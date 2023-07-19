@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <title>The Internet Classroom: Javascript &gt;.&lt;</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://virtualatdp.berkeley.edu:8081/tic/forums/tech/22.rss">
+    <link rel="stylesheet" type="text/css" title="Default" href="default-stylesheet.css">
+    <script type="text/javascript" src="v5-script.js"></script>
+  </head>
+  <body>
+    <div id="top">
+      <div class="text">The Internet Classroom</div>
+      <div class="image1"></div>
+      <div class="image2"></div>
+      <div class="image3"></div>
+    </div>
+    <div id="main">
+      <div class="view">
+        <div class="title">Javascript &gt;.&lt;</div>
+        <div class="path"><a href="The%20Internet%20Classroom%20-%20Main.html">Main</a> &gt; <a href="The%20Internet%20Classroom%20-%20Forums-2.html">Forums</a> &gt; <a href="The%20Internet%20Classroom%20-%20Tech%20Support-2.html">Tech Support</a></div>
+        <div class="posts">
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+          <div class="even">
+            <div class="post" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+              <table class="details" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/22 18:15:54 PDT by <a href="The%20Internet%20Classroom%20-%20Pandagamer.html">Pandagamer</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/46243069/Pandagamer" width="64" height="64" alt="[Pandagamer's avatar]" class="avatar" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+              <div class="forumCode">
+                <p>Alright, I'm using the toggle javascript to make an image appear when I have my mouse over a thumbnail, and the coding is functional, but for some reason the images that are supposed to be hidden are showing. The javascript and css work, since its funstioning in my navigation bar, but it doesn't work in my gallery. In addition, after I use the rollovers once, they all start functioning properly. I don't get what's wrong.</p>
+                <p>The page is <a href="http://atdpcube.berkeley.edu/~alam/origami/modular.html">http://atdpcube.berkeley.edu/~alam/origami/modular.html</a></p>
+                <p>this is my html:</p>
+                <p>&lt;div class=&quot;content&quot;&gt;</p>
+                <p>&lt;table class=&quot;gallerybar&quot;&gt;<br>&lt;tr&gt;<br>&lt;td&gt;&amp;nbsp;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('2')&quot; onmouseout=&quot;javascript:toggle('2')&quot;&gt;&lt;img </p>
+                <p>src=&quot;thumbs/minibrocadethumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('3')&quot; onmouseout=&quot;javascript:toggle('3')&quot;&gt;&lt;img </p>
+                <p>src=&quot;thumbs/5tetrahedrathumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('4')&quot; onmouseout=&quot;javascript:toggle('4')&quot;&gt;&lt;img </p>
+                <p>src=&quot;thumbs/buckyball1stthumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('5')&quot; onmouseout=&quot;javascript:toggle('5')&quot;&gt;&lt;img </p>
+                <p>src=&quot;thumbs/kusudamathumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('6')&quot; onmouseout=&quot;javascript:toggle('6')&quot;&gt;&lt;img </p>
+                <p>src=&quot;thumbs/buckyball30thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+                <p>&lt;div id=&quot;gfocus&quot;&gt;</p>
+                <p>&lt;div id=&quot;12&quot;&gt;<br>&lt;img src=&quot;gallery/rose.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;11&quot;&gt;<br>&lt;img src=&quot;gallery/modstar.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;10&quot;&gt;<br>&lt;img src=&quot;gallery/magicrose.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;9&quot;&gt;<br>&lt;img src=&quot;gallery/magiccube.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;8&quot;&gt;<br>&lt;img src=&quot;gallery/buckyball90.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;7&quot;&gt;<br>&lt;img src=&quot;gallery/brocade2.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;6&quot;&gt;<br>&lt;img src=&quot;gallery/buckyball30.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;5&quot;&gt;<br>&lt;img src=&quot;gallery/kusudama.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;4&quot;&gt;<br>&lt;img src=&quot;gallery/buckyball1st.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;3&quot;&gt;<br>&lt;img src=&quot;gallery/5tetrahedra.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;2&quot;&gt;<br>&lt;img src=&quot;gallery/minibrocade.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;div id=&quot;default&quot;&gt;<br>&lt;img src=&quot;gallery/brocadegroup.jpg&quot; alt=&quot;DigiPaper Origami&quot; /&gt;<br>&lt;/div&gt;</p>
+                <p>&lt;/div&gt;</p>
+                <p>&lt;table class=&quot;gallerybar&quot;&gt;<br>&lt;tr&gt;</p>
+                <p>&lt;td&gt;<br>&lt;a onmouseover=&quot;javascript:toggle('7')&quot; <br>onmouseout=&quot;javascript:toggle('7')&quot;&gt;<br>&lt;img src=&quot;thumbs/brocadethumb.jpg&quot; alt=&quot;&quot; /&gt;<br>&lt;/td&gt;</p>
+                <p>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('8')&quot; onmouseout=&quot;javascript:toggle('8')&quot;&gt;&lt;img </p>
+                <p>src=&quot;thumbs/buckyball90thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('9')&quot; onmouseout=&quot;javascript:toggle('9')&quot;&gt;&lt;img </p>
+                <p>src=&quot;thumbs/magiccubethumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('10')&quot; </p>
+                <p>onmouseout=&quot;javascript:toggle('10')&quot;&gt;&lt;img src=&quot;thumbs/magicrosethumb.jpg&quot; alt=&quot;&quot; </p>
+                <p>/&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('11')&quot; </p>
+                <p>onmouseout=&quot;javascript:toggle('11')&quot;&gt;&lt;img src=&quot;thumbs/modstarthumb.jpg&quot; alt=&quot;&quot; </p>
+                <p>/&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;a onmouseover=&quot;javascript:toggle('12')&quot; </p>
+                <p>onmouseout=&quot;javascript:toggle('12')&quot;&gt;&lt;img src=&quot;thumbs/rosethumb.jpg&quot; alt=&quot;&quot; </p>
+                <p>/&gt;&lt;/a&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+                <p>&lt;/div&gt;</p>
+                <p>and this is my css for it:<br>.content {height: 600px;<br>	overflow: auto;<br>	background-color: #80b8e4;<br>	color: #000;<br>	padding: 10px;<br>	border: 1px solid #000;<br>	margin-left: 10px;<br>	}</p>
+                <p>.gallerybar {width: 440px;<br>	height: 50px;<br>	margin-left: auto;<br>	margin-right: auto;<br>	empty-cells: show;<br>	padding: 0px;<br>	border-spacing: 17px;<br>	}</p>
+                <p>td {width: 50px;<br>	height: 50px;<br>	border: 1px solid #000;<br>	}</p>
+                <p>#gfocus {width: 400px;<br>	height: 400px;<br>	overflow: hidden;<br>	 margin-top: 5px;<br>	 margin-bottom: 5px;<br>	 margin-left: auto;<br>	 margin-right: auto;<br>	 border: 1px solid #000;<br>	 position: relative;<br>	}</p>
+                <p>#default {z-index: 1;<br>	  position: relative;<br>	}</p>
+                <p>#1, #2, #3, #4, #5, #6, #7, #8, #9, #10, #11, #12 	</p>
+                <p>{display: none;<br>	 position: absolute;<br>	 top: 0px;<br>	 left: 0px;<br>	 z-index: 7;<br>	}</p>
+                <p class="noMargin">help.</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+              <table class="details" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/22 19:07:07 PDT by <a href="The%20Internet%20Classroom%20-%20Forward%20Biased.html">Forward Biased</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48664011/Forward Biased" width="64" height="64" alt="[Forward Biased's avatar]" class="avatar" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+              <div class="forumCode">
+                <p>For those of you watching at home, the problem is that CSS IDs cannot start with a number. IE and Safari are both loose, so both will render it correctly. Firefox is more strict, so it will ignore IDs like that.</p>
+                <p class="noMargin">The solution is to use IDs that start with letters, e.g. #a1, #a2, #blahblah1335, etc. (the JavaScript and CSS are just fine).</p>
+              </div>
+            </div>
+          </div>
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="navigator">
+        <p><a href="The%20Internet%20Classroom%20-%20Main.html"><img src="minus.png" alt="-">Main</a></p>
+        <div class="children">
+          <p><a href="The%20Internet%20Classroom%20-%20Introduction-3.html"><img src="plus.png" alt="+">Introduction</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Weblogs-2.html"><img src="blank.png" alt=" ">Weblogs</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Lecture%20Notes-2.html"><img src="blank.png" alt=" ">Lecture Notes</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Projects-2.html"><img src="blank.png" alt=" ">Projects</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Class%20Pix-2.html"><img src="plus.png" alt="+">Class Pix</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Forums-2.html"><img src="minus.png" alt="-">Forums</a></p>
+          <div class="children">
+            <p><a href="The%20Internet%20Classroom%20-%20Tech%20Support-2.html"><img src="blank.png" alt=" ">Tech Support</a></p>
+            <div class="children"></div>
+            <p><a href="The%20Internet%20Classroom%20-%20Class%20Discussion-2.html"><img src="blank.png" alt=" ">Class Discussion</a></p>
+            <p><a href="The%20Internet%20Classroom%20-%20Off%20Topic-2.html"><img src="blank.png" alt=" ">Off Topic</a></p>
+          </div>
+          <p><a href="The%20Internet%20Classroom%20-%20Chatroom-2.html"><img src="blank.png" alt=" ">Chatroom</a></p>
+        </div>
+        <p><a href="The%20Internet%20Classroom%20-%20User%20List.html">User List</a></p>
+        <p><a href="The%20Internet%20Classroom%20-%20Activity%20Tracker.html">Activity Tracker</a></p>
+      </div>
+      <div class="login">
+        <p>Not logged in.</p>
+        <p class="noMargin"><a href="/login/login?path=tic/forums/tech/22">Log In</a><br><a href="/login/register?path=tic/forums/tech/22">Create New User</a></p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div class="text">All TIC materials copyright © 2006 Cynthia Nie and Trevor Ridinger</div>
+      <div class="powered-by"><a href="http://evlan.org/server/">Powered by Io Community Manager, Evlan, and FreeBSD</a></div>
+    </div>
+  </body>
+</html>

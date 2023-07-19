@@ -1,0 +1,1290 @@
+﻿/* 
+ * Title:	TIC 2006 IoCM Theme
+ * Based on:	ozphactor's "Viridian" theme (sorry Alex XD )
+ * Author:	Cynthia Nie (kasskat@gmail.com)
+ * Revision:	2006/06/15
+ *
+ * Recommended luminance values
+ * Border:	125
+ * Background:	219
+ * Chat Name:	100
+ *
+ * BLUE: 135, 152
+ * GRAY: 10, 1
+ * ORANGE: 22, 152
+ * GREEN: 83, 152
+ *
+ * Recommended saturation value: none
+ */
+
+
+body
+{
+   font-family: Verdana, Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   color: #333;
+   background: #fff url(bg_columns.jpg) right repeat-y;
+}
+
+#top .image3
+{
+   position: absolute;
+   top: 0px;
+   height: 150px;
+   width: 100%;
+   background: url(bannerimg.jpg) left no-repeat;
+   z-index: 2;
+}
+
+#top .image1
+{
+   position: absolute;
+   top: 0px;
+   height: 150px;
+   width: 100%;
+   background: url(bg_banner.jpg) left;
+   z-index: 1;
+}
+
+#bottom
+{
+   margin-right: 235px;
+   padding: 5px 10px;
+   border-top: 10px solid black;
+   background: url(bg_bottom.jpg) right;
+   font-size: 70%;
+   color: white;
+}
+
+#bottom a:link, #bottom a:visited, #bottom a:hover { color: white; }
+
+
+a:link, a:visited	{color: #007bc1; text-decoration: none;}
+a:hover, a:active	{color: #fd8d41; text-decoration: underline;}
+
+
+form       {margin: 0;}
+
+textarea
+{
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 82%;
+   width: 100%;
+   _width: auto;
+}
+
+input, select, button
+{
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 88%;
+}
+
+input.fullwidth {width: 100%;}
+
+p          			{margin-top: 0; font-size: 82%;}
+#main p 			{line-height: 1.6; margin-bottom: 1em; }
+#main p.noMargin, p.noMargin 	{margin: 0;}
+
+hr
+{
+   margin: 1em 0;
+   height: 1px;
+   color: #999;
+   background-color: #999;
+   border-width: 0;
+}
+
+#main .view table {clear: both;}
+
+/********************************************************************/
+#main
+{
+   margin-top: 135px;
+   margin-right: 230px;
+   padding: 0.8em 0.4em;
+}
+
+#main .timestamp
+{
+   font-size: 70%;
+   text-align: center;
+}
+
+/*********************************/
+#main .view
+{
+   margin: 0.5em 1em 2em;
+}
+
+#main .view .title
+{
+   margin-bottom: 0.2em;
+   font-size: 140%;
+   font-family: Georgia, "Times New Roman", Times, serif;
+   color: #666;
+}
+
+#main .view .path
+{
+   font-size: 70%;
+   font-weight: bold;
+   color: #999;
+   margin-bottom: 1.5em;
+   float: left;
+   text-transform: uppercase;
+}
+
+#main .view .path a:hover, #main .view .path a:active {
+   text-decoration: none;
+}
+
+#main .view .sub-title
+{
+   font-size: 135%;
+   margin: 0.8em 0 0.4em;
+   letter-spacing: -0.04em;
+   color: #666;
+}
+
+#main .view .details
+{
+   font-size: 70%;
+   color: #999;
+   line-height: 1.25em;
+   text-align: right;
+}
+
+#main .view .pageNavigator p
+{
+   margin: 0;
+}
+
+#main .view .pageNavigator a
+{
+   font-weight: bold;
+}
+
+/*********************************/
+#main .topics, #main .files, #main .activity
+{
+   clear: both;
+   margin-top: 1em;
+   padding: 1em 1em 2.5em;
+   border: 1px solid #999;
+   background-color: #eee;
+}
+
+#main .topics .title, #main .files .title, #main .activity .title {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 140%;
+	letter-spacing: -0.04em;
+	margin: 0;
+	color: #999;
+	}
+
+#main .view .poll, #main .view .downloads {clear: both;}
+
+#main .view .downloads {
+	font-size: 120%;
+	color: #666;
+	letter-spacing: -0.04em;
+	margin: 0.3em 0 0;
+	}
+
+#main .files .table-title
+{
+   font-weight: bold;
+   margin-top: 0.5em;
+}
+
+#main .topics table, #main .files table, #main .activity table
+{
+   clear: right;
+   width: 100%;
+   border: 1px solid #999;
+   background-color: #fff;
+   border-collapse: collapse;
+}
+
+#main .topics .lastPage, #main .files .lastPage, #main .activity .lastPage
+{
+   font-size: 80%;
+   text-align: left;
+}
+
+#main .activity .item-title, #main .activity .lastPage {margin-left: 0.5em;}
+
+#main .topics .even, #main .files .even, #main .activity table .even {background-color: #eee;}
+
+#main .view table .item-title  {text-align: left; overflow: auto;}
+
+#main .topics .editable .column0, #main .files .editable .column0 {width: 0.75em;}
+#main .topics .editable .column1, #main .files .editable .column1 {width: 0.75em;}
+#main .topics .editable .column3, #main .files .editable .column3 {width: 5em; _width: 6em; }
+#main .topics .editable .column4, #main .files .editable .column4 {width: 10em; _width: 12em;}
+#main .topics .editable .column5, #main .files .editable .column5 {width: 10em; _width: 12em;}
+
+#main .topics .normal .column0, #main .files .normal .column0 {width: 0.75em;}
+#main .topics .normal .column2, #main .files .normal .column2 {width: 5em; _width: 6em; }
+#main .topics .normal .column3, #main .files .normal .column3 {width: 10em; _width: 12em;}
+#main .topics .normal .column4, #main .files .normal .column4 {width: 10em; _width: 12em;}
+
+#main .activity table .column1 {width: 5em; _width: 6em; }
+#main .activity table .column2 {width: 10em; _width: 12em;}
+
+#main .topics th, #main .files th, #main .activity th
+{
+   text-align: center;
+   color: #fff;
+   background: #999;
+   padding: 0.3em 0.6em;
+}
+
+#main .topics form, #main .files form, #main .activity form
+{
+   padding-top: 0.16em;
+   padding-left: 0.63em;
+   float: right;
+}
+
+#main .topics form input, #main .files form input, #main .posts form input {
+	font-size: 82%;
+	}
+
+#main .topics form select, #main .files form select, #main .activity form select, #main .posts form select {
+        margin-top: 0.2em;
+	font-size: 100%;
+	}
+
+#main .edit .poll {
+	font-size: 82%;
+        margin-bottom: 0.5em;
+	}
+
+#main .edit .poll textarea {
+	font-size: 100%;
+	}
+
+#main .view .poll
+{
+   margin-bottom: 1.25em;
+   font-size: 82%;
+}
+
+#main .view .poll .question
+{
+   font-weight: bold;
+   margin-bottom: 0.5em;
+}
+
+#main .view .poll .vote
+{
+   padding: 0;
+   float: none;
+}
+
+#main .view .poll .total {
+	margin-bottom: 0.5em;
+	}
+
+#main .view .poll form input {
+	font-size: 100%;
+	}
+
+#main .view .poll .unvote
+{
+   float: right;
+   padding: 0.5em 0 0;
+}
+
+#main .view .poll .normal          {width: 100%; margin: 0.5em 0; padding: 0 0.5em;}
+#main .view .poll .normal .column1 {width: 50%;}
+
+#main .view .poll .normal .count
+{
+   position: absolute;
+   padding: 0.2em 0.6em 0;
+}
+
+#main .view .poll .condorcet {margin: 0.5em;}
+#main .view .poll .column0 {width: 1em;}
+
+#main .view .poll .normal .bar
+{
+   border: 1px solid #999;
+   background-color: #eee;
+   padding: 0.1em 0;
+}
+
+/*********************************/
+#main .entries
+{
+   clear: both;
+   margin: 0;
+}
+
+#main .entries .title
+{
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 132%;
+   padding-top: 0.2em;
+   margin: 0.2em 0;
+   letter-spacing: -0.04em;
+}
+
+#main .view .entries .details
+{
+   text-align: left;
+   padding: 0 0 0.4em;
+   margin: 0;
+}
+
+#main .entry .extended
+{
+   margin-top: 1em;
+}
+
+#main .entries .entry
+{
+   margin: 0.8em 0;
+   padding: 0;
+}
+
+#main .entry .readMoreLink, #main .entry .commentLink {
+	margin: 1.2em 0 1.4em;
+	font-size: 82%;
+	font-weight: bold;
+}
+
+#main .entry .commentLink {
+	float: right;
+	}
+
+#main .entry .custom-fields
+{
+   margin-left: auto;
+   font-size: 70%;
+   color: #999;
+   text-align: right;
+   border-collapse: collapse;
+}
+
+#main .entries .entry .custom-fields
+{
+   margin-left: 0;
+   text-align: left;
+}
+
+#main .entry .custom-fields td
+{
+   padding: 0;
+}
+
+/*********************************/
+#main .posts
+{
+   margin-top: 1.2em;
+   clear: both;
+}
+
+#main .posts .deletion
+{
+   padding: 1.2em;
+   margin: 0 0 1.6em;
+   font-size: 82%;
+   color: #999;
+   border: 1px solid #999;
+   background-color: white;
+}
+
+#main .post
+{
+   padding: 0 0.5em 0.5em;
+   margin: 0 0 1.2em;
+   min-height: 8em;
+   _height: 8em;
+   border: 1px solid #ccc;
+}
+
+#main table
+{
+   clear: both;
+   margin: 0 0 0.8em;
+}
+
+#main .post table.details
+{
+   text-align: left;
+   border-collapse: collapse;
+   font-size: 90%;
+   margin: 0.8em 0.55em 0.4em;
+   padding: 0;
+   border-bottom: 1px solid #999;
+}
+
+#main .post table.details td {
+	padding: 0;
+	}
+
+#main .post table.details input {
+        margin: 0 0.1em;
+	font-size: 100%;
+	}
+
+#main .post .avatar
+{
+   border: 1px solid #ccc;
+   float: right;
+   margin: 0.5em 0.5em 1em;
+   _margin-bottom: 0;
+}
+
+#main .post .sig
+{
+   font-size: 80%;
+   margin: 1em 0.5em 0.5em;
+   border-top: 1px solid #999;
+   padding-top: 0.1em;
+   color: #eee;
+   clear: both;
+}
+
+#main .post .sig p.noMargin {
+	color: #666;
+	}
+
+#main .post .details .column0
+{
+   width: 100%;
+}
+
+#main .post .append
+{
+   margin: 0.8em 0.72em 0.4em;
+   padding: 0.4em 0;
+   font-size: 70%;
+   border-bottom: 1px solid #999;
+}
+
+#main .posts .buttons {width: 100%; text-align: right;}
+#main .posts .buttons .column0 {width: 100%;}
+
+#main .posts .post form
+{
+   margin: 0;
+   padding: 0;
+   float: none;
+}
+
+/*********************************/
+#main .view .known-ips .column0 {width: 8.75em;}
+#main .view .known-ips .column1 {width: 12.5em;}
+
+#main .view .known-ips {
+	text-align: left;
+	}
+
+#main .view .known-ips th {
+	font-size: 82%;
+	font-weight: bold;
+	color: #fff;
+	background: #999;
+	padding: 0.3em 0.6em;
+	}
+
+#main .view .known-ips td {
+	font-size: 82%;
+	background: #eee;
+	padding: 0.3em 0.6em;
+	}
+
+#main .user-list, #main .bans
+{
+   clear: both;
+}
+
+#main .user-list table, #main .bans
+{
+   width: 100%;
+}
+
+#main .user-list th, #main .bans th
+{
+   text-align: left;
+   padding: 0.3em 0.6em;
+   color: #fff;
+   background: #999;
+   font-weight: bold;
+   font-size: 82%;
+}
+
+#main .user-list td, #main .bans td
+{
+   padding: 0.3em 0.6em;
+   background: #eee;
+   font-size: 82%;
+}
+
+#main .user-list td a, #main .bans td a {
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+#main .view .user-list table .column0 {width: 10em; _width: 12em;}
+
+#main .user-list .influence
+{
+   text-align: right;
+}
+
+#main .topics table, #main .files table, #main .activity table {
+	margin-top: 0.8em;
+	margin-bottom: 0.5em;
+	}  
+
+#main .user-list table, #main .known-ips, #main .custom-fields {
+	margin: 0;
+	}
+
+#main .view .chat table .column0,
+#main .view .activity table .column0 {
+	width: auto;
+	}
+
+#main .view table td {
+        font-size: 82%;
+	}
+
+#main .view .buttons td {
+	font-size: 100%;
+	}
+
+#main .view .topics table td, 
+#main .view .files table td, 
+#main .view .activity table td {
+	color: #666;
+	text-align: center;
+	padding: 0.2em 0.4em;
+	}
+
+#main .view .topics table th, 
+#main .view .files table th, 
+#main .view .activity table th {
+	padding: 0.4em;
+        font-size: 82%;
+	}
+
+#main .view .topics table td .item-title, 
+#main .view .files td .item-title, 
+#main .view .activity table td .item-title {
+	text-align: left;
+	}
+
+/*********************************/
+
+#main .edit
+{
+   padding: 1em 1.2em 1em 1em;
+   border: 1px solid #999;
+   background-color: #eee;
+   margin: 0.8em 1em 1.2em;
+}
+
+#main .view .edit
+{
+   margin: 0;
+}
+
+#main .edit .colormap
+{
+   border: 1px solid #999;
+}
+
+#main .edit .avatar
+{
+   height: 66px;   /* enough to contain avatar image */
+}
+
+#main .edit .progress
+{
+   font-size: 70%;
+}
+
+#main .edit .avatar img
+{
+   border: 1px solid #999;
+   float: right;
+}
+
+#main .edit .fields
+{
+   width: 100%;
+   border-collapse: collapse;
+}
+
+#main .edit .fields .column0
+{
+   width: 10em;
+}
+
+#main .edit .children
+{
+   margin-top: 0.5em;
+   margin-bottom: 1em;
+   width: 100%;
+   background-color: #fff;
+   border: 1px solid #999;
+   empty-cells: show;
+   border-collapse: collapse;
+}
+
+#main .edit .children th {
+	color: #fff;
+	background: #999;
+	padding: 0.4em;
+	text-align: center;
+	}
+
+#main .edit .children td {
+	color: #666;
+	padding: 0.2em 0.4em;
+	text-align: center;
+	}
+
+#main .edit .children td select {
+	font-size: 100%;
+	}
+
+#main .edit .children .even td {
+	background: #eee;
+	}
+	
+#main .edit th
+{
+   text-align: center;
+   border-bottom: 1px solid #999;
+}
+
+#main .edit .buttons
+{
+   text-align: right;
+}
+
+/********************************************************************/
+#main .chat
+{
+   clear: both;
+   margin-top: 1.25em;
+   padding: 0.8em;
+   _padding: 0.4em 0.8em 0;
+   border: 1px solid #999;
+   background-color: #eee;
+}
+
+#main .chat #chat-warning {
+	font-size: 80%;
+	line-height: 1.6;
+	}
+
+#main .chat #chat-warning input {
+	margin-top: 1em;
+	font-size: 100%;
+	}
+
+#main .chat .chat-room
+{
+   width: 100%;
+   border-collapse: collapse;
+}
+
+#main .chat .chat-room .column1 {width: 170px;}
+
+#main .chat-log .pageNavigator p
+{
+   margin: 0;
+   text-indent: 0;
+   text-align: right;
+}
+
+#chat-log
+{
+   height: 34.53em;
+   border: 1px solid #999;
+   background-color: #fff;
+
+   padding: 0.63em 0.31em 0;
+   overflow: auto;
+   font-size: 82%;
+}
+
+#main .chat-log {
+   font-size: 80%;
+   }
+
+#chat-users
+{
+   height: 28.9em;
+   border: 1px solid #999;
+   background-color: #fff;
+   overflow: auto;
+}
+
+#chat-log p, #main .chat-log p
+{
+   clear: both;
+   margin: 0 0.25em;
+   padding-bottom: 0.25em;
+   font-size: 100%;
+}
+
+#chat-log .emote, #main .chat-log .emote
+{
+   font-weight: bold;
+}
+
+#chat-log .tell, #main .chat-log .tell
+{
+   border-left-color: #eee;
+   background-color: #eee;
+}
+
+#chat-log .status, #main .chat-log .status
+{
+   color: #999;
+   font-style: italic;
+}
+
+#chat-log .award, #main .chat-log .award, #chat-log .beep, #main .chat-log .beep, #chat-log .kick, #main .chat-log .kick, #chat-log .roll, #main .chat-log .roll
+{
+   font-style: italic;
+}
+
+#chat-log .error, #main .chat-log .error
+{
+   color: #f00;
+}
+
+#chat-users p {margin: 0 0 0 0.31em;}
+#chat-users table {width: 100%; border-collapse: collapse;}
+
+#chat-users a
+{
+   display: block;
+   overflow: hidden;
+   padding: 0.2em 0.4em 0.4em;
+   height: 2em;
+   background-color: #eee;
+   font-weight: bold;
+   color: #666;
+}
+
+#chat-users a:hover, #chat-users a:hover .away-message
+{
+   text-decoration: none;
+}
+
+#chat-users .avatar {border: 0; width: 2em; height: 2em; float: right;}
+
+#chat-users .away-message
+{
+   font-size: 65%;
+   color: #999;
+   font-style: italic;
+   font-weight: normal;
+}
+
+#main .chat .chat-input
+{
+   padding: 0;
+   font-size: 82%;
+   margin-bottom: 0.5em;
+}
+
+#main .chat .chat-input input {
+	margin-bottom: 1em;
+	}
+
+#main .chat .chat-input .fullwidth
+{
+   border: 1px solid #999;
+   background-color: #fff;
+}
+
+#main .chat .chat-resize
+{
+   width: 100%;
+   height: 0.25em;
+   cursor: n-resize;
+}
+
+#chat-log img { display: none; }
+.chat-log img { display: none; }
+
+#chat-active
+{
+   display: none;
+}
+
+#chat-beep-controls
+{
+   display: none;
+   font-size: 82%;
+}
+
+/********************************************************************/
+#sidebar
+{
+   position: absolute;
+   top: 160px;
+   right: 0;
+   width: 225px;
+   padding-bottom: 0.2em;
+   background: transparent;
+}
+
+#sidebar a {
+   text-decoration: none;
+   font-weight: bold;
+}
+
+#sidebar .navigator
+{
+   margin: 0 0 1.2em;
+   padding: 1.2em 0 0;
+}
+
+#sidebar .navigator a {
+   display: block;
+   padding: 0.2em 1.6em;
+}
+
+#sidebar .navigator a:link, #sidebar .navigator a:visited {
+   color: #666;
+}
+
+#sidebar .navigator a:hover, #sidebar .navigator a:active {
+   background: #fda065;
+   color: #fff;
+}
+
+#sidebar .navigator img
+{
+   border: 1px solid #999;
+   margin: 0 0.4em 0 0;
+}
+
+#sidebar .navigator .children a {padding-left: 2.3em;}
+
+#sidebar .navigator .children .children a {padding-left: 3.0em;}
+
+#sidebar .navigator .children .children .children a {padding-left: 3.7em;}
+
+#sidebar .navigator p
+{
+   font-size: 82%;
+   margin: 0;
+   padding: 0;
+}
+
+#sidebar .login {
+   margin: 1.25em;
+   background: #f9f9f9;
+   padding: 0.6em 0.8em 0.4em;
+   border: 1px solid #999;
+}
+
+#sidebar .login p {
+   color: #666;
+   font-size: 82%;
+   margin: 0 0 0.4em;
+}
+
+#sidebar .adminBox {
+        background: #f9f9f9;
+	margin: 1.25em;
+        padding: 0.2em;
+	border: 1px solid #999;
+	}
+
+#sidebar .adminBox p {
+	margin: 0.8em;
+	}
+
+#sidebar .adminBox input
+{
+   	width: 100%;
+}
+
+#sidebar .adminBox .checkbox
+{
+   margin: 0.7em 0.4em 0.1em;
+   width: auto;
+}
+
+#sidebar .google-box {
+	color: #666;
+	background: #f9f9f9;
+	border: 1px solid #999;
+	margin: 1.2em 1.3em;
+	padding: 0.6em 0.8em;
+	overflow: hidden;
+	}
+
+#sidebar .google-box .logo {text-align: center;}
+#sidebar .google-box img {border: 0;}
+#sidebar .google-box .scope-select {font-size: 82%;}
+#sidebar .google-box .query-box input {width: 100%; font-size: 82%;}
+#sidebar .google-box .button input {width: 100%; font-size: 82%;}
+
+/*********************************/
+#sidebar .calendar
+{
+   margin: 1.2em 1.2em;
+   padding: 0;
+}
+
+#sidebar .calendar .heading
+{
+   font-family: Verdana, Arial, serif;
+   font-size: 70%;
+   color: #666;
+   margin: 0 -0.1em;
+   _margin: 0;
+   padding: 0.3em 0;
+   font-weight: bold;
+   text-align: center;
+   background: #fff;
+   border: solid #999;
+   border-width: 1px 1px 0;
+   line-height: 1.2;
+}
+
+#sidebar .calendar table
+{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   border: 1px solid #999;
+   background-color: #f9f9f9;
+   border-collapse: collapse;
+}
+
+#sidebar .calendar .months, #sidebar .calendar .months td
+{
+   border-top-width: 0;
+}
+
+#sidebar .calendar th
+{
+   font-size: 55%;
+   color: #999;
+}
+
+#sidebar .calendar .days   col {width: 14%;}
+#sidebar .calendar .months col {width: 50%;}
+
+#sidebar .calendar td
+{
+   font-size: 70%;
+   border: 1px solid #999;
+   text-align: center;
+   padding: 0.2em 0;
+   color: #666;
+   line-height: 1.2;
+}
+
+#sidebar .calendar td .current
+{
+   font-weight: bold;
+   position: relative;
+   top: -0.2em;
+   padding: 0.2em 0;
+   margin-bottom: -0.4em;
+   background-color: #b9d9ee;
+}
+
+#sidebar .calendar td a
+{
+   display: block;
+   position: relative;
+   top: -0.2em;
+   padding: 0.2em 0;
+   margin-bottom: -0.4em;
+   font-weight: bold;
+}
+
+#sidebar .calendar td a:link, #sidebar .calendar td a:visited
+{
+   color: #666;
+}
+
+#sidebar .calendar td a:hover, #sidebar .calendar td a:active
+{
+   background: #fda065;
+   color: #fff;
+}
+
+/********************************************************************/
+.forumCode
+{
+   clear: both;
+   text-align: left;
+}
+
+#main .post .forumCode
+{
+   clear: none;
+   color: #333;
+   padding: 0.5em;
+}
+
+#main .post .sig .forumCode
+{
+   padding: 0;
+}
+
+#main .content .forumCode, #main .entry .forumCode
+{
+   margin-top: 0.63em;
+}
+
+.forumCode ul {margin-top: 0;}
+
+.forumCode ul.numeric     {list-style-type: decimal;}
+.forumCode ul.lowerAlpha  {list-style-type: lower-alpha;}
+.forumCode ul.upperAlpha  {list-style-type: upper-alpha;}
+.forumCode ul.lowerRoman  {list-style-type: lower-roman;}
+.forumCode ul.upperRoman  {list-style-type: upper-roman;}
+
+
+.forumCode li {
+	list-style-type: square;
+	color: #ccc;
+	}
+
+.forumCode li p {
+	color: #333;
+	}
+
+.forumCode .u, .inlineForumCode .u {text-decoration: underline;}
+.forumCode .s, .inlineForumCode .s {text-decoration: line-through;}
+
+.forumCode .sub  , .inlineForumCode .sub   {vertical-align: sub;   font-size: 65%;}
+.forumCode .super, .inlineForumCode .super {vertical-align: super; font-size: 65%;}
+
+.forumCode .h1
+{
+   font-size: 163%;
+   color: #666;
+   letter-spacing: -0.04em;
+   padding: 0;
+   border-bottom: 1px solid #ccc;
+   margin: 0 0 0.5em;
+}
+
+.forumCode .h2 {font-size: 140%; color: #666; margin: 0.6em 0 0.4em;}
+.forumCode .h3 {font-weight: bold; margin: 0.8em 0 0.6em;}
+
+.forumCode pre
+{
+   margin: 0 1.5em 1em;
+   padding: 0.25em 0.5em;
+   border: 1px solid #999;
+   background-color: white;
+   line-height: normal;
+}
+
+pre.code {
+	color: black;
+}
+
+.forumCode .center
+{
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0;
+   margin-bottom: 1em;
+}
+
+.forumCode .indent
+{
+   margin: 0 1.5em 1em;
+}
+
+.forumCode .spoiler .heading, .forumCode .quote .heading
+{
+   color: #666;
+   margin-bottom: 0.2em;
+   font-weight: bold;
+   font-size: 70%;
+}
+
+.forumCode .spoiler, .forumCode .quote
+{
+   margin: 1em 1.5em 1.5em;
+}
+
+.forumCode .quote .body
+{
+   padding: 0.4em 0.8em;
+   border: 1px solid #999;
+   background-color: white;
+}
+
+.forumCode .spoiler .body
+{
+   padding: 0.25em 0.5em;
+   border: 1px solid #999;
+   color: black;
+   background-color: black;
+}
+
+.evlan .keyword {color: #009; font-weight: bold;}
+.evlan .number  {color: #00f;}
+.evlan .string  {color: #f00;}
+.evlan .atom    {color: #090;}
+.evlan .comment {color: #999; font-style: italic;}
+.evlan .symbol  {color: #000; font-weight: bold;}
+.evlan .block   {background-color: #eee;}
+
+
+/* ------ forum code addons -------- */
+
+.block-left {
+	text-align: left;
+}
+
+.block-right {
+	text-align: right;
+}
+
+.block-justify {
+	text-align: justify;
+}
+
+.block-tabletype1 td {
+	border: 1px solid #ccc;
+	padding: 0.63em;
+	empty-cells: hide;
+	width: auto;
+}
+
+.block-tabletype2 td {
+	border: 1px solid #ccc;
+	padding: 0.63em;
+	width: 6.25em;
+	empty-cells: hide;
+}
+
+.block-tabletype3 td {
+	border: 1px solid #ccc;
+	padding: 0.63em;
+	width: 6.25em;
+	empty-cells: hide;
+	vertical-align: top;
+}
+
+.block-tabletype4 td {
+	border: 1px solid #ccc;
+	padding: 5px;
+	empty-cells: hide;
+	vertical-align: top;
+	width: auto;
+}
+
+.block-tabletype5 td {
+	padding: 5px;
+	empty-cells: hide;
+	vertical-align: top;
+	width: auto;
+}
+
+.block-tabletypealex td {
+	padding: 0.1em 0.4em;
+	background: #f9f9f9;
+	vertical-align: top;
+	width: 8em;
+	overflow: hidden;
+	border: solid #ddd;
+	border-width: 0 1px 1px 0;
+}
+
+.block-tabletypealex .even td {
+	background: #eee;
+}
+
+.block-tabletypealex b {
+	color: #666;
+}
+
+.block-tabletype1, 
+.block-tabletype2,
+.block-tabletype3,
+.block-tabletype4 {
+	font-size: 122%;
+	}
+
+.block-noborder td {
+	border: 0px;
+}
+
+.block-textwrapleft img {
+	float: left;
+	margin-right: 1em;
+}
+
+.block-textwrapright img {
+	float: right;
+	margin-left: 1em;
+}
+
+#main .view .site-info p.noMargin {
+	margin-bottom: 1em;
+	}
+
+#main .view .posts .buttons td {
+	padding: 0 0 0 0.5em;
+	}
+
+#main .edit table, 
+#main .edit .buttons, 
+#main .edit .users, 
+#main .edit .body, 
+#main .edit .avatar, 
+#main .edit .sig, 
+#main .edit .color-preview,
+#main .edit .normal,
+#main .edit .recent,
+#main .edit .aspects {
+	font-size: 82%;
+	}
+
+#main .edit table input,
+#main .edit .buttons input,
+#main .edit .buttons select,
+#main .edit .users input, 
+#main .edit .body textarea, 
+#main .edit .avatar input, 
+#main .edit .sig textarea,
+#main .edit .poll textarea,
+#main .view .poll table td,
+#main .view .poll select,
+#main .edit .recent input,
+#main .edit .aspects input {
+	font-size: 100%;
+	}
+
+#main .view .poll .info {
+	margin-bottom: 0.5em;
+	}
+
+#main .edit .fields .fineprint {	
+	font-size: 90%;
+	}
+
+#main .view .files .fineprint {
+	margin-bottom: 0;
+	}
+

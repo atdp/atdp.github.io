@@ -1,0 +1,27 @@
+body {
+	background-color: #369;
+
+	font-family: verdana, sans-serif;
+	font-size: 80%;
+}
+
+div {
+	width: 660px;
+	padding: 20px;
+	margin: 0 auto 0 auto;
+
+	background-color: #BDF;
+}
+
+table
+
+td {
+	padding: 10px;
+	width: 200px;
+
+	border: 1px solid #DEF;
+}
+
+td.tablehead {
+	color: #666;
+}

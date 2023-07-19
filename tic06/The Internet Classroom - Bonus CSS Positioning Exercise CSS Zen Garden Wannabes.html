@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <title>The Internet Classroom: Bonus CSS Positioning Exercise: CSS Zen Garden Wannabes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://virtualatdp.berkeley.edu:8081/tic/forums/discussion/24.rss">
+    <link rel="stylesheet" type="text/css" title="Default" href="default-stylesheet.css">
+    <script type="text/javascript" src="v5-script.js"></script>
+  </head>
+  <body>
+    <div id="top">
+      <div class="text">The Internet Classroom</div>
+      <div class="image1"></div>
+      <div class="image2"></div>
+      <div class="image3"></div>
+    </div>
+    <div id="main">
+      <div class="view">
+        <div class="title">Bonus CSS Positioning Exercise: CSS Zen Garden Wannabes</div>
+        <div class="path"><a href="The%20Internet%20Classroom%20-%20Main.html">Main</a> &gt; <a href="The%20Internet%20Classroom%20-%20Forums.html">Forums</a> &gt; <a href="The%20Internet%20Classroom%20-%20Class%20Discussion.html">Class Discussion</a></div>
+        <div class="posts">
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 10:15:27 PDT by <a href="The%20Internet%20Classroom%20-%20kass.html">kass</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48199547/kass" width="64" height="64" alt="[kass's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <p>This is similar to the Google exercise, but now we're going to throw positioning into the mix. What makes it particularly difficult is that we're going to try to imitate a CSS Zen Garden layout.</p>
+                <p>A bit of background... <a href="http://www.csszengarden.com/">CSS Zen Garden</a> is probably the best resource you'll ever find on doing full-CSS layouts. It's a really incredible website that I would highly recommend all of you check out sometime. They're more or less doing something similar to what we're doing, with one HTML page and many different CSS documents that style the page to look radically different with each submission.</p>
+                <p>Of course, the important thing we want to imitate here is the layout, not the designs. That is your mantra for this exercise... don't worry about finding the right color or getting the background image: just try to put everything in the right place.</p>
+                <p>As with the Google exercise, I will provide you with an HTML template that you may not alter. It is slightly different from the default CSS Zen Garden template... hopefully simpler. I will also give you a CSS template to start with, although you will probably find that it doesn't start you off that much, other than listing all of the IDs that can be found in the HTML document. </p>
+                <p>I've chosen four out of the many Zen Garden official layouts for all of you to pick one and try your luck on. They are the following:</p>
+                <ul>
+                  <li>
+                    <p class="noMargin">Dave Shea's <a href="http://www.csszengarden.com/?cssfile=001%2F001%2Ecss">tranquille</a></p>
+                  </li>
+                  <li>
+                    <p class="noMargin">Dan Rubin's <a href="http://www.csszengarden.com/?cssfile=024%2F024%2Ecss">Not So Minimal</a></p>
+                  </li>
+                  <li>
+                    <p class="noMargin">James Abbott's <a href="http://www.csszengarden.com/?cssfile=074%2F074%2Ecss">Egyptian Dawn</a></p>
+                  </li>
+                  <li>
+                    <p class="noMargin">Clinton Barth's <a href="http://www.csszengarden.com/?cssfile=080%2F080%2Ecss">Zen Pool</a></p>
+                  </li>
+                </ul>
+                <hr>
+                <p>Here's a starting list of things to think about when you are trying to figure out how to do a CSS-only layout.</p>
+                <ul>
+                  <li>
+                    <p class="noMargin">Break the layout down into obvious sections. We're not looking so much at individual IDs and divs as we are the overall picture. Which IDs make up the majority of the content? Which IDs make up the navigation? Where are they in relation to each other?</p>
+                  </li>
+                  <li>
+                    <p class="noMargin">Once you've got the &quot;main&quot; sections figured out, the next step is to figure out how exactly you would go about positioning them and to just try it. Remember what was said about block elements and set sizes: an element whose size has not be definitely set will automatically stretch to become as large as is necessary. This means you may want to set the width for some IDs so that you can move them more easily, and so that they will float properly.</p>
+                  </li>
+                  <li>
+                    <p class="noMargin">The CSS template has some borders written in to start you off. You may get rid of them if you like (they are obviously not within any of the layouts that you are trying to imitate), but it may be to your advantage to leave them in temporarily to help you see exactly what boxes you have, how big they are, where they are, etc. Borders can be extremely useful when dealing with all-CSS layouts because they make it obvious what space is available and what space is being taken up.</p>
+                  </li>
+                  <li>
+                    <p class="noMargin">Experiment! You don't know what to do? Well, just try random stuff! Much of this is guess and check; try something, doesn't work, erase, try something else. There should be a lot of guess and checking on your part, and in this case it's really not that bad of a thing.</p>
+                  </li>
+                  <li>
+                    <p class="noMargin">Remember, you should concentrate solely on getting things to be in the proper place. Don't worry about design!</p>
+                  </li>
+                </ul>
+                <hr>
+                <p class="noMargin">HTML template: <a href="http://128.32.250.91/~kass/zengarden/zengarden.html">http://128.32.250.91/~kass/zengarden/zengarden.html</a><br>CSS starter file: <a href="http://128.32.250.91/~kass/zengarden/zenstyles.css">http://128.32.250.91/~kass/zengarden/zenstyles.css</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+              <table class="details" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 11:46:58 PDT by <a href="The%20Internet%20Classroom%20-%20macdrenalds.html">macdrenalds</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p>T_T</p>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+              <table class="details" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 11:47:27 PDT by <a href="The%20Internet%20Classroom%20-%20macdrenalds.html">macdrenalds</a><br>Edited at 2006/07/07 11:48:02 PDT</td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p class="noMargin">haha</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/09 02:41:14 PDT by <a href="The%20Internet%20Classroom%20-%20Raikia.html">Raikia</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47707814/Raikia" width="64" height="64" alt="[Raikia's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p class="noMargin">Oh, god, teach img 4 bg plz D:</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">(¯`v´¯) <br>`*.¸.*´ <br>¸.•´¸.•*¨) ¸.•*¨) <br>(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•. ~Raid kills on contact &lt;3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/09 11:42:02 PDT by <a href="The%20Internet%20Classroom%20-%20kass.html">kass</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48199547/kass" width="64" height="64" alt="[kass's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <div class="quote">
+                  <div class="heading">Quote from Raikia:</div>
+                  <div class="body">
+                    <p class="noMargin">Oh, god, teach img 4 bg plz D:</p>
+                  </div>
+                </div>
+                <p>What have I said? :P</p>
+                <p class="noMargin">CSS is so intuitive... if you want to do a certain thing, you can probably GUESS at what the property is. Now what do you suppose the property to control the background image of an element would be, hmm?</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/09 22:54:34 PDT by <a href="The%20Internet%20Classroom%20-%20Raikia.html">Raikia</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47707814/Raikia" width="64" height="64" alt="[Raikia's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p class="noMargin">o.o&quot; -clueless-</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">(¯`v´¯) <br>`*.¸.*´ <br>¸.•´¸.•*¨) ¸.•*¨) <br>(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•. ~Raid kills on contact &lt;3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/09 23:00:21 PDT by <a href="The%20Internet%20Classroom%20-%20kass.html">kass</a><br>Edited at 2006/07/09 23:02:46 PDT</td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48199547/kass" width="64" height="64" alt="[kass's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <div class="quote">
+                  <div class="heading">Quote from Raikia:</div>
+                  <div class="body">
+                    <p class="noMargin">o.o&quot; -clueless-</p>
+                  </div>
+                </div>
+                <p>Not the correct answer. Guess again. No really. GUESS. If you wanted to change the BACKGROUND IMAGE of the body, how would you do it?</p>
+                <pre class="code">body {
+       ________________: _______;
+}</pre>
+                <p class="noMargin">What do you suppose goes in the first blank?</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/09 23:01:56 PDT by <a href="The%20Internet%20Classroom%20-%20Raikia.html">Raikia</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47707814/Raikia" width="64" height="64" alt="[Raikia's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p>e.e</p>
+                <p>body {background-image: &lt;img src=&quot;ksdklfhs.jpg&quot; alt=&quot;sdjkfhsd&quot; /&gt;</p>
+                <p class="noMargin">I think I saw this somewhere on my brother's old weblog e.e&quot;</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">(¯`v´¯) <br>`*.¸.*´ <br>¸.•´¸.•*¨) ¸.•*¨) <br>(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•. ~Raid kills on contact &lt;3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/09 23:05:33 PDT by <a href="The%20Internet%20Classroom%20-%20kass.html">kass</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48199547/kass" width="64" height="64" alt="[kass's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <div class="quote">
+                  <div class="heading">Quote from Raikia:</div>
+                  <div class="body">
+                    <p>e.e</p>
+                    <p>body {background-image: &lt;img src=&quot;ksdklfhs.jpg&quot; alt=&quot;sdjkfhsd&quot; /&gt;</p>
+                  </div>
+                </div>
+                <p>Correct. Mostly. You guessed the right property, at least.  :P  Of course, the img that you used is an HTML tag and has no place in CSS, but since this is the first time we've touched on this, you can hardly be expected to know the right way to put in an image through CSS.</p>
+                <p>background-image: url(The%20Internet%20Classroom%20-%20Not%20Found-10.html);</p>
+                <p class="noMargin">You do not need to put in an alt, since it's not an actual image that goes in with the rest of the content. It's a mechanism for changing the appearance of a site, which is why it's controlled by CSS. Make sense?</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/09 23:14:08 PDT by <a href="The%20Internet%20Classroom%20-%20Raikia.html">Raikia</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47707814/Raikia" width="64" height="64" alt="[Raikia's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p class="noMargin">yes n.n::&quot;</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">(¯`v´¯) <br>`*.¸.*´ <br>¸.•´¸.•*¨) ¸.•*¨) <br>(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•. ~Raid kills on contact &lt;3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="navigator">
+        <p><a href="The%20Internet%20Classroom%20-%20Main.html"><img src="minus.png" alt="-">Main</a></p>
+        <div class="children">
+          <p><a href="The%20Internet%20Classroom%20-%20Introduction.html"><img src="plus.png" alt="+">Introduction</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Weblogs-2.html"><img src="blank.png" alt=" ">Weblogs</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Lecture%20Notes-2.html"><img src="blank.png" alt=" ">Lecture Notes</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Projects-2.html"><img src="blank.png" alt=" ">Projects</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Class%20Pix-2.html"><img src="plus.png" alt="+">Class Pix</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Forums.html"><img src="minus.png" alt="-">Forums</a></p>
+          <div class="children">
+            <p><a href="The%20Internet%20Classroom%20-%20Tech%20Support.html"><img src="blank.png" alt=" ">Tech Support</a></p>
+            <p><a href="The%20Internet%20Classroom%20-%20Class%20Discussion.html"><img src="blank.png" alt=" ">Class Discussion</a></p>
+            <div class="children"></div>
+            <p><a href="The%20Internet%20Classroom%20-%20Off%20Topic.html"><img src="blank.png" alt=" ">Off Topic</a></p>
+          </div>
+          <p><a href="The%20Internet%20Classroom%20-%20Chatroom.html"><img src="blank.png" alt=" ">Chatroom</a></p>
+        </div>
+        <p><a href="The%20Internet%20Classroom%20-%20User%20List.html">User List</a></p>
+        <p><a href="The%20Internet%20Classroom%20-%20Activity%20Tracker.html">Activity Tracker</a></p>
+      </div>
+      <div class="login">
+        <p>Not logged in.</p>
+        <p class="noMargin"><a href="/login/login?path=tic/forums/discussion/24">Log In</a><br><a href="/login/register?path=tic/forums/discussion/24">Create New User</a></p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div class="text">All TIC materials copyright © 2006 Cynthia Nie and Trevor Ridinger</div>
+      <div class="powered-by"><a href="http://evlan.org/server/">Powered by Io Community Manager, Evlan, and FreeBSD</a></div>
+    </div>
+  </body>
+</html>

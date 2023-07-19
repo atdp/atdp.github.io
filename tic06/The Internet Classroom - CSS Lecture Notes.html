@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <title>The Internet Classroom: CSS Lecture Notes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://virtualatdp.berkeley.edu:8081/tic/forums/discussion/5.rss">
+    <link rel="stylesheet" type="text/css" title="Default" href="default-stylesheet.css">
+    <script type="text/javascript" src="v5-script.js"></script>
+  </head>
+  <body>
+    <div id="top">
+      <div class="text">The Internet Classroom</div>
+      <div class="image1"></div>
+      <div class="image2"></div>
+      <div class="image3"></div>
+    </div>
+    <div id="main">
+      <div class="view">
+        <div class="title">CSS Lecture Notes</div>
+        <div class="path"><a href="The%20Internet%20Classroom%20-%20Main.html">Main</a> &gt; <a href="The%20Internet%20Classroom%20-%20Forums.html">Forums</a> &gt; <a href="The%20Internet%20Classroom%20-%20Class%20Discussion.html">Class Discussion</a></div>
+        <div class="posts">
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/24 01:29:06 PDT by <a href="The%20Internet%20Classroom%20-%20Vivian.html">Vivian</a><br>Edited at 2006/06/24 23:28:05 PDT</td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p>This is an overview of the important points covered in the &quot;Introduction to CSS&quot; lecture.</p>
+                <p>Cascading Style Sheets (CSS) - World Wide Web Consortium (W3C) Standard</p>
+                <p>HTML is used to provide the structure of a webpage.<br>CSS is used to control the overall appearance and style of it.</p>
+                <p>HTML structural tags -<br>&lt;p&gt;, &lt;body&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;a&gt;, &lt;h1&gt;-&lt;h6&gt;, &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</p>
+                <p>Tags that you should NOT use in the HTML document -<br>&lt;center&gt;, &lt;font&gt;, &lt;u&gt;</p>
+                <p>If you have these tags, please use CSS instead.</p>
+                <p>------</p>
+                <p class="noMargin">Format of the Cascading Style Sheet:        </p>
+                <pre class="code">selector {
+   property: value;
+   property: value;
+} </pre>
+                <p>Notes:<br>1. In CSS you use the curly brackets { } instead of the angle brackets used in html &lt; &gt;.<br>2. To separate between the &quot;property&quot; and the &quot;value&quot; use a colon.<br>3. To separate between different properties, use a semi-colon.</p>
+                <p>The selector is name of the structural tag you are dealing with. (p, body, ul, table, a)<br>The property is the visual element you want to change. (font-family, color, text-decoration)<br>The value is the specification. (italic, bold, blue, green, &quot;Comic Sans MS&quot;, Arial)</p>
+                <p>example:</p>
+                <pre class="code">body {
+   background-color: #607B8B;
+   font-family: &quot;Trebuchet MS&quot;, Verdana, sans-serif;
+}</pre>
+                <p><span class="u">Reminders</span>:<br>1. When specifying colors, use the hexadecimal color codes like I have done in the example above. This way, you are not limited in your choices. Don't forget to inlude the pound sign (#).<br>2. When specifying font-family, any values consisting of more than one word should be placed in quotation marks (&quot; &quot;). Include a back-up font option in case computers do not have the first font. (Use commas to separate.) Also, provide a generic font family (sans or sans-serif) in case people don't have any of your fonts.</p>
+                <p>------<br>Embedded Style Sheet:<br><span class="u">When to Use</span>: This is useful if you only want to change the appearance of <span class="u">one</span> page.</p>
+                <p>Embedded style sheets are placed inside of the HTML document, inside the <b>&lt;head&gt; tag.</b></p>
+                <p class="noMargin">This is the tag you need to use to embed the style sheet:</p>
+                <pre class="code">&lt;style type=&quot;text/css&quot;&gt;
+   /* your CSS goes here */
+&lt;/style&gt;</pre>
+                <p>All of the CSS should be included inside these style tags.</p>
+                <p class="noMargin">Example: </p>
+                <pre class="code">
+&lt;style type=&quot;text/css&quot;&gt;
+
+body {
+   background-color: #63B8FF;
+   color: #CD2626;
+}
+
+h1 { 
+   color: #FF5721;
+}
+
+a:link, a:visited, a:hover  {
+   color: #CD0000;
+   background-color: #63B8FF;
+   text-decoration: none;
+}
+
+&lt;/style&gt;
+</pre>
+                <p>--------<br>External Style Sheet:<br><span class="u">When to Use</span>: This is useful when you want multiple pages to have the same visual apperance. Instead of having to copy and paste the same style sheet into each individual page, you can make one style sheet and link all of the pages to it.</p>
+                <p class="noMargin">This is the tag you need to use to link to an external style sheet:</p>
+                <pre class="code">&lt;link rel=&quot;stylesheet&quot; href=&quot;filename.css&quot; type=&quot;text/css&quot; /&gt;</pre>
+                <p>Note: <br>1. For external style sheets, they must be saved as a &quot;.css&quot; document rather than a &quot;.html&quot; document.<br>2. Don't forget to change the &quot;filename.css&quot; to whatever you saved your stylesheet as.</p>
+                <p class="noMargin"><b>Important</b>: In the external style sheet, do <b>not</b> include the &lt;style type=&quot;text/css&quot;&gt; and &lt;/style&gt; tags. There should be <b>NO</b> Xhtml tags of any kind in this document.</p>
+              </div>
+              <div class="sig" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <div class="forumCode" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                  <p class="noMargin">What's up yo?<br>Ah...gotta love that minty freshness. ;p</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/24 02:09:24 PDT by <a href="The%20Internet%20Classroom%20-%20Vivian.html">Vivian</a><br>Edited by <a href="The%20Internet%20Classroom%20-%20kass.html">kass</a> at 2006/06/24 09:01:27 PDT</td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p>Additional Information:</p>
+                <p class="noMargin">If you want more than one selector to have the same appearance you can do this:</p>
+                <pre class="code">p, body, a:visited {
+   font-size: 45px;
+   font-style: italic;
+}</pre>
+                <p>Just separate each selector with a comma.</p>
+                <p class="noMargin">You can combine several properties under an umbrella term if they have similar functions. Instead of this:</p>
+                <pre class="code">p {
+   font-family: &quot;Arial Narrow&quot;, &quot;Times New Roman&quot;, sans-serif;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 125%;
+}</pre>
+                <p class="noMargin">You can do this:</p>
+                <pre class="code">p {
+   font: bold normal 125% &quot;Arial Narrow&quot;;
+}</pre>
+                <p>This works for the &quot;border&quot; and &quot;font&quot; properties. The order you list the values can be found in your book.</p>
+                <p>Note: When specifying the value for font-size, use either &quot;px&quot; or &quot;%&quot;. The percentage would be in relation to the default size.</p>
+                <p>------<br>More properties can be found in the book. Some examples are margin, padding, text-align, letter-spacing, word-spacing, etc. <b>DON'T</b> start using anything you are unfamiliar with before you ask a TA or an instructor. You might be learning how to use them correctly in a later lecture.</p>
+                <p>------<br>Links:</p>
+                <p class="noMargin">The CSS validator can be found <a href="http://jigsaw.w3.org/css-validator/">here</a>.<br>Hexadecimal color codes can be found <a href="http://www.w3schools.com/html/html_colors.asp">here</a>.</p>
+              </div>
+              <div class="sig" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <div class="forumCode" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                  <p class="noMargin">What's up yo?<br>Ah...gotta love that minty freshness. ;p</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+              <table class="details" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/24 11:19:02 PDT by <a href="The%20Internet%20Classroom%20-%20Dennis.html">Dennis</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/46200007/Dennis" width="64" height="64" alt="[Dennis's avatar]" class="avatar" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+              <div class="forumCode">
+                <p>GOOOOO VIVIAN!!</p>
+                <p class="noMargin">cool now I can check up on somethings i forgot XD</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/24 21:48:52 PDT by <a href="The%20Internet%20Classroom%20-%20Raikia.html">Raikia</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47707814/Raikia" width="64" height="64" alt="[Raikia's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p class="noMargin">I've had my nose in the book for fourty minutes -__- What page is the order in which you list the values?</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">(¯`v´¯) <br>`*.¸.*´ <br>¸.•´¸.•*¨) ¸.•*¨) <br>(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•. ~Raid kills on contact &lt;3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+              <table class="details" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/25 18:09:37 PDT by <a href="The%20Internet%20Classroom%20-%20MANG0xSALSA.html">MANG0xSALSA</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/46831665/MANG0xSALSA" width="64" height="64" alt="[MANG0xSALSA's avatar]" class="avatar" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+              <div class="forumCode">
+                <p>so we have to list the values in a specific order?</p>
+                <p>-.- i remember someone saying something about that.. but i dont remember what the order is..</p>
+              </div>
+              <div class="sig" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+                <div class="forumCode" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post">
+              <table class="details">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/25 23:55:06 PDT by <a href="The%20Internet%20Classroom%20-%20CupOfNoodles.html">CupOfNoodles</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p class="noMargin">Ugh..my head is spinning...T.T</p>
+              </div>
+              <div class="sig">
+                <div class="forumCode">
+                  <p class="noMargin">&quot;YEEEEE&quot;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/26 00:35:05 PDT by <a href="The%20Internet%20Classroom%20-%20Vivian.html">Vivian</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p class="noMargin">Sorry ladies.. I don't have a copy of your book so try looking under the section where it talks about &quot;font&quot; under CSS.</p>
+              </div>
+              <div class="sig" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <div class="forumCode" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                  <p class="noMargin">What's up yo?<br>Ah...gotta love that minty freshness. ;p</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+              <table class="details" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/26 08:45:48 PDT by <a href="The%20Internet%20Classroom%20-%20stephanie08.html">stephanie08</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p class="noMargin">thanks this helps alot!!!! :)</p>
+              </div>
+              <div class="sig" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+                <div class="forumCode" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+                  <p class="noMargin">its not the size of the dog in a fight, its the size of fight in the dog- Dwight D. Eisenhower~*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+              <table class="details" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/06 22:13:59 PDT by <a href="The%20Internet%20Classroom%20-%20macdrenalds.html">macdrenalds</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p class="noMargin">ahhh....studying for test tmrw<br>xD</p>
+              </div>
+              <div class="append" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">Added at 2006/07/06 22:28:37 PDT</div>
+              <div class="forumCode">
+                <p class="noMargin">its tmrw rite?</p>
+              </div>
+            </div>
+          </div>
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="navigator">
+        <p><a href="The%20Internet%20Classroom%20-%20Main.html"><img src="minus.png" alt="-">Main</a></p>
+        <div class="children">
+          <p><a href="The%20Internet%20Classroom%20-%20Introduction.html"><img src="plus.png" alt="+">Introduction</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Weblogs-2.html"><img src="blank.png" alt=" ">Weblogs</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Lecture%20Notes-2.html"><img src="blank.png" alt=" ">Lecture Notes</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Projects-2.html"><img src="blank.png" alt=" ">Projects</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Class%20Pix-2.html"><img src="plus.png" alt="+">Class Pix</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Forums.html"><img src="minus.png" alt="-">Forums</a></p>
+          <div class="children">
+            <p><a href="The%20Internet%20Classroom%20-%20Tech%20Support.html"><img src="blank.png" alt=" ">Tech Support</a></p>
+            <p><a href="The%20Internet%20Classroom%20-%20Class%20Discussion.html"><img src="blank.png" alt=" ">Class Discussion</a></p>
+            <div class="children"></div>
+            <p><a href="The%20Internet%20Classroom%20-%20Off%20Topic.html"><img src="blank.png" alt=" ">Off Topic</a></p>
+          </div>
+          <p><a href="The%20Internet%20Classroom%20-%20Chatroom.html"><img src="blank.png" alt=" ">Chatroom</a></p>
+        </div>
+        <p><a href="The%20Internet%20Classroom%20-%20User%20List.html">User List</a></p>
+        <p><a href="The%20Internet%20Classroom%20-%20Activity%20Tracker.html">Activity Tracker</a></p>
+      </div>
+      <div class="login">
+        <p>Not logged in.</p>
+        <p class="noMargin"><a href="/login/login?path=tic/forums/discussion/5">Log In</a><br><a href="/login/register?path=tic/forums/discussion/5">Create New User</a></p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div class="text">All TIC materials copyright © 2006 Cynthia Nie and Trevor Ridinger</div>
+      <div class="powered-by"><a href="http://evlan.org/server/">Powered by Io Community Manager, Evlan, and FreeBSD</a></div>
+    </div>
+  </body>
+</html>

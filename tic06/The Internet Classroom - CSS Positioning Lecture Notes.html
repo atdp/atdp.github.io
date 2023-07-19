@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <title>The Internet Classroom: CSS Positioning Lecture Notes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://virtualatdp.berkeley.edu:8081/tic/forums/discussion/23.rss">
+    <link rel="stylesheet" type="text/css" title="Default" href="default-stylesheet.css">
+    <script type="text/javascript" src="v5-script.js"></script>
+  </head>
+  <body>
+    <div id="top">
+      <div class="text">The Internet Classroom</div>
+      <div class="image1"></div>
+      <div class="image2"></div>
+      <div class="image3"></div>
+    </div>
+    <div id="main">
+      <div class="view">
+        <div class="title">CSS Positioning Lecture Notes</div>
+        <div class="path"><a href="The%20Internet%20Classroom%20-%20Main.html">Main</a> &gt; <a href="The%20Internet%20Classroom%20-%20Forums.html">Forums</a> &gt; <a href="The%20Internet%20Classroom%20-%20Class%20Discussion.html">Class Discussion</a></div>
+        <div class="posts">
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 09:19:35 PDT by <a href="The%20Internet%20Classroom%20-%20aqhong.html">aqhong</a><br>Edited at 2006/07/07 11:49:51 PDT</td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p>When using absolute or relative positioning, you <b>must</b> specify at least one offset (top, right, bottom, or left) if you want the element to move. The offset is the distance between the element and that side. For example, setting the offset to &quot;left: 50px&quot; would shift the element 50px <i>from</i> the left; in other words, the element itself would move to the right. You can also use negative offset values as well.</p>
+                <div class="h2">
+                  <p class="noMargin">Relative positioning</p>
+                </div>
+                <p>Relative positioning moves an element from its original position, without affecting any other elements. The space where the element used to be remains intact; other content does <i>not</i> move in to fill the space.</p>
+                <p class="noMargin">The following code will push an element 100px <i>from</i> the top (100px downward) and 50px <i>to</i> the left (since the value is negative). Nothing else on the page will be affected.</p>
+                <pre class="code">#element-id {
+	position: relative;
+	top: 100px;
+	left: -50px; 
+}</pre>
+                <div class="h2">
+                  <p class="noMargin">Absolute positioning</p>
+                </div>
+                <p>Absolute positioning takes an element out of its original position, and drops it somewhere else on the page, &quot;above&quot; the rest of the content. The space where the element used to be is filled with the content that came after, as if the element was never there.</p>
+                <p>Absolute positioning positions an element in respect to either a positioned container element (if there is one), or the browser window (if there is none). </p>
+                <p class="noMargin">The following code will place an element 100px from the top and 50px from the left of the browser window. If the element is inside another positioned element (either absolute or relative), it will be 100px from the top and 50px from the left of that containing element, and not the browser window. </p>
+                <pre class="code">#element-id {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}</pre>
+                <div class="h2">
+                  <p class="noMargin">Floats</p>
+                </div>
+                <p>A floated element is one that is pushed to the far left or right of the window or any containing element. It is somewhat similar to absolute positioning in that block elements that follow it will act as if the element was never there (by moving up into the space it previously occupied), but inline elements (such as text and images) will wrap around the floated element, instead of being covered up by it. Content that comes before the floated element will be unaffected.</p>
+                <p>When floating an element, you <b>must</b> specify a width for the element. You can float an element either left or right.</p>
+                <p class="noMargin">The following code will float an element to the left and set its width to 200px.</p>
+                <pre class="code">#element-id {
+	float: left; /* or &quot;right&quot; */
+	width: 200px;
+}</pre>
+                <p>If you don't want an element that follows the floated element to wrap around it, you can &quot;clear&quot; the element. Clearing an element prevents any floated elements from appearing at the side of the element. The element will appear directly below the bottom edge of the floated element instead. You can clear either, or both, sides of an element.</p>
+                <p class="noMargin">The following code tells the browser to prevent any elements floated to the left from appearing the left of the element.</p>
+                <pre class="code">#element-id {
+	clear: left; /* or &quot;right&quot; or &quot;both&quot; */
+}</pre>
+                <div class="h2">
+                  <p class="noMargin">Two-Column Layout</p>
+                </div>
+                <p>A multi-column layout can be achieved using a combination of floats and margins.</p>
+                <p class="noMargin">The following code produces a simple two-column layout. The left column has a fixed width (200px), while the right column expands to fill the rest of the window. The left margin of the right column is set equal to the width of the left column in prevent the text in the right column from appearing below the left column. Also note that #leftcolumn (which is the floated element) must appear first in the code, before #rightcolumn.</p>
+                <pre class="code">#leftcolumn {
+	float: left;
+	width: 200px;
+}
+
+#rightcolumn {
+	margin-left: 200px;
+}</pre>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 09:36:49 PDT by <a href="The%20Internet%20Classroom%20-%20NormanZhu.html">NormanZhu</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/46320910/NormanZhu" width="64" height="64" alt="[NormanZhu's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p class="noMargin">Ummm I can't remember half of what you said :D</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">My signature is better than your signature.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deletion">2 posts deleted.</div>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 11:50:18 PDT by <a href="The%20Internet%20Classroom%20-%20aqhong.html">aqhong</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p class="noMargin">The typo is fixed, and your posts have been vaporized :D</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+              <table class="details" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 13:04:01 PDT by <a href="The%20Internet%20Classroom%20-%20kokiinlow.html">kokiinlow</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47152598/kokiinlow" width="64" height="64" alt="[kokiinlow's avatar]" class="avatar" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+              <div class="forumCode">
+                <p class="noMargin">ahhhh.</p>
+              </div>
+              <div class="sig" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+                <div class="forumCode" style="color: #3798D3; border-color: #3798D3; background-color: #DBEDF7;">
+                  <p class="noMargin">BE A LOSER. because being cool is so overrated. ;]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 14:06:45 PDT by <a href="The%20Internet%20Classroom%20-%20Raikia.html">Raikia</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47707814/Raikia" width="64" height="64" alt="[Raikia's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p class="noMargin">I plugged a bunch of relative and absolute stuff into my CSS, but the page got huge and my scroll bars are a lot longer than they're supposed to be. They were a lot shorter when I used margins o.o</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">(¯`v´¯) <br>`*.¸.*´ <br>¸.•´¸.•*¨) ¸.•*¨) <br>(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•. ~Raid kills on contact &lt;3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+              <table class="details" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 14:08:30 PDT by <a href="The%20Internet%20Classroom%20-%20Forward%20Biased.html">Forward Biased</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48664011/Forward Biased" width="64" height="64" alt="[Forward Biased's avatar]" class="avatar" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+              <div class="forumCode">
+                <div class="quote">
+                  <div class="heading">Quote from Raikia:</div>
+                  <div class="body">
+                    <p class="noMargin">I plugged a bunch of relative and absolute stuff into my CSS, but the page got huge and my scroll bars are a lot longer than they're supposed to be. They were a lot shorter when I used margins o.o</p>
+                  </div>
+                </div>
+                <p class="noMargin">Details?</p>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+              <table class="details" style="color: #8A8080; border-color: #8A8080; background-color: #EAE8E8;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 19:08:13 PDT by <a href="The%20Internet%20Classroom%20-%20Arnold.html">Arnold</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p class="noMargin">hey Alex...man....the info u preached lol...kinda vanished after i went back to my seat...i lost u at the container part...which one overlaps again?...sorry man...good lecture though...u looked very comfortable up ther :D</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/07 20:42:11 PDT by <a href="The%20Internet%20Classroom%20-%20EggPuffs.html">EggPuffs</a><br>Edited at 2006/07/07 20:42:59 PDT</td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47351505/EggPuffs" width="64" height="64" alt="[EggPuffs's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p class="noMargin">Heh, Andrew almost did the whole thing for me...&lt;&lt; &gt;&gt; THANK YOU ANDREW!!! ^^ He pretty much told me what to type in, but then I went (to Raid's) home and got everything exact within a pixel. I hope. &lt;&lt; &gt;&gt; *twiddles thumbs conpulsively* It doesn't really line up with the original though, it's kinda off.  No matter how much Kass yells at us, I must try to make it close to perfect! &gt;=D Even though it's off by a LITTLE BIT!!! &gt;=o<br>...<br>...<br>Aah, good lecture Alex. You're more...hearable now! =D Do the Rubik's Cube AGAIN!!! XD XD XD</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">Terrance is afraid of being stalked by a slut. (Don't ask. I made a pic but you probably don't want to see it.)<br>&quot;Everyone has the right to be stupid, but some people overabuse the privilege.&quot;<br>                                                            ~anonymous</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/08 02:28:28 PDT by <a href="The%20Internet%20Classroom%20-%20Raikia.html">Raikia</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47707814/Raikia" width="64" height="64" alt="[Raikia's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <div class="quote">
+                  <div class="heading">Quote from Forward Biased:</div>
+                  <div class="body">
+                    <div class="quote">
+                      <div class="heading">Quote from Raikia:</div>
+                      <div class="body">
+                        <p class="noMargin">I plugged a bunch of relative and absolute stuff into my CSS, but the page got huge and my scroll bars are a lot longer than they're supposed to be. They were a lot shorter when I used margins o.o</p>
+                      </div>
+                    </div>
+                    <p class="noMargin">Details?</p>
+                  </div>
+                </div>
+                <p><a href="http://128.32.250.91/~alina/csspos.html">http://128.32.250.91/~alina/csspos.html</a></p>
+                <p class="noMargin">All the HTML and CSS is there. I have no idea what happened TT&quot;</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">(¯`v´¯) <br>`*.¸.*´ <br>¸.•´¸.•*¨) ¸.•*¨) <br>(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•. ~Raid kills on contact &lt;3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+              <table class="details" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/08 10:38:03 PDT by <a href="The%20Internet%20Classroom%20-%20Forward%20Biased.html">Forward Biased</a><br>Edited at 2006/07/08 10:40:36 PDT</td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48664011/Forward Biased" width="64" height="64" alt="[Forward Biased's avatar]" class="avatar" style="color: #37D343; border-color: #37D343; background-color: #DBF7DD;">
+              <div class="forumCode">
+                <p>Elements that are relatively positioned still take up the space they would have taken if there weren't any offsets. So, even though you pulled several blocks up via &quot;top: -Zpx&quot;, the page will still respect the space those blocks would have taken up without it (&quot;top: 0;&quot;).</p>
+                <p class="noMargin">Compare the scrollbars:<br><a href="http://128.32.250.91/~alina/csspos.html">http://128.32.250.91/~alina/csspos.html</a><br><a href="http://quadoshock.com/ref/csspos.html">http://quadoshock.com/ref/csspos.html</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <table class="details" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/08 18:22:40 PDT by <a href="The%20Internet%20Classroom%20-%20Raikia.html">Raikia</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/47707814/Raikia" width="64" height="64" alt="[Raikia's avatar]" class="avatar" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+              <div class="forumCode">
+                <p class="noMargin">I get it :o So would the scroll bars shrink if I used absolute?</p>
+              </div>
+              <div class="sig" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                <div class="forumCode" style="color: #858584; border-color: #858584; background-color: #E9E9E9;">
+                  <p class="noMargin">(¯`v´¯) <br>`*.¸.*´ <br>¸.•´¸.•*¨) ¸.•*¨) <br>(¸.•´ (¸.•´ .•´ ¸¸.•¨¯`•. ~Raid kills on contact &lt;3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/07/08 18:38:12 PDT by <a href="The%20Internet%20Classroom%20-%20aqhong.html">aqhong</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p class="noMargin">Yes, they would, since absolutely positioned elements take up no space in the normal flow of the document (where the rest of the content is).</p>
+              </div>
+            </div>
+          </div>
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="navigator">
+        <p><a href="The%20Internet%20Classroom%20-%20Main.html"><img src="minus.png" alt="-">Main</a></p>
+        <div class="children">
+          <p><a href="The%20Internet%20Classroom%20-%20Introduction.html"><img src="plus.png" alt="+">Introduction</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Weblogs-2.html"><img src="blank.png" alt=" ">Weblogs</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Lecture%20Notes-2.html"><img src="blank.png" alt=" ">Lecture Notes</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Projects-2.html"><img src="blank.png" alt=" ">Projects</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Class%20Pix-2.html"><img src="plus.png" alt="+">Class Pix</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Forums.html"><img src="minus.png" alt="-">Forums</a></p>
+          <div class="children">
+            <p><a href="The%20Internet%20Classroom%20-%20Tech%20Support.html"><img src="blank.png" alt=" ">Tech Support</a></p>
+            <p><a href="The%20Internet%20Classroom%20-%20Class%20Discussion.html"><img src="blank.png" alt=" ">Class Discussion</a></p>
+            <div class="children"></div>
+            <p><a href="The%20Internet%20Classroom%20-%20Off%20Topic.html"><img src="blank.png" alt=" ">Off Topic</a></p>
+          </div>
+          <p><a href="The%20Internet%20Classroom%20-%20Chatroom.html"><img src="blank.png" alt=" ">Chatroom</a></p>
+        </div>
+        <p><a href="The%20Internet%20Classroom%20-%20User%20List.html">User List</a></p>
+        <p><a href="The%20Internet%20Classroom%20-%20Activity%20Tracker.html">Activity Tracker</a></p>
+      </div>
+      <div class="login">
+        <p>Not logged in.</p>
+        <p class="noMargin"><a href="/login/login?path=tic/forums/discussion/23">Log In</a><br><a href="/login/register?path=tic/forums/discussion/23">Create New User</a></p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div class="text">All TIC materials copyright © 2006 Cynthia Nie and Trevor Ridinger</div>
+      <div class="powered-by"><a href="http://evlan.org/server/">Powered by Io Community Manager, Evlan, and FreeBSD</a></div>
+    </div>
+  </body>
+</html>

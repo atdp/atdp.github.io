@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <title>The Internet Classroom: More CSS (class/id, inline vs block, box model)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://virtualatdp.berkeley.edu:8081/tic/forums/discussion/10.rss">
+    <link rel="stylesheet" type="text/css" title="Default" href="default-stylesheet.css">
+    <script type="text/javascript" src="v5-script.js"></script>
+  </head>
+  <body>
+    <div id="top">
+      <div class="text">The Internet Classroom</div>
+      <div class="image1"></div>
+      <div class="image2"></div>
+      <div class="image3"></div>
+    </div>
+    <div id="main">
+      <div class="view">
+        <div class="title">More CSS (class/id, inline vs block, box model)</div>
+        <div class="path"><a href="The%20Internet%20Classroom%20-%20Main.html">Main</a> &gt; <a href="The%20Internet%20Classroom%20-%20Forums.html">Forums</a> &gt; <a href="The%20Internet%20Classroom%20-%20Class%20Discussion.html">Class Discussion</a></div>
+        <div class="posts">
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/28 12:01:34 PDT by <a href="The%20Internet%20Classroom%20-%20kass.html">kass</a><br>Edited at 2006/06/28 13:38:02 PDT</td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48199547/kass" width="64" height="64" alt="[kass's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <p>Notes for Kyle's lecture</p>
+                <div class="h2">
+                  <p class="noMargin">Classes and IDs</p>
+                </div>
+                <p>In case you want to use some of the same styles repeatedly, you can create classes to hold them, which can then be applied to any other tag that you want. e.g.</p>
+                <pre class="code">/* in your CSS */
+.red { color: red; }
+
+&lt;!-- in your HTML --&gt;
+&lt;h1 class=&quot;red&quot;&gt;This will appear red.&lt;/h1&gt;
+
+&lt;p class=&quot;red&quot;&gt;This will also appear red.&lt;/p&gt;
+
+&lt;p&gt;But this is a normal paragraph, without the &quot;red&quot; class applied, 
+so the text wouldn't appear red.&lt;/p&gt;</pre>
+                <p>You can also apply multiple classes to a single element.</p>
+                <pre class="code">/* in your CSS */
+.red { color: red; }
+.graybg { background-color: gray; }
+
+&lt;!-- in your HTML --&gt;
+&lt;h1 class=&quot;red graybg&quot;&gt;this will have red text with a gray background.&lt;/h1&gt;</pre>
+                <p>IDs are like classes, except that you may only use them once in your HTML document. This makes them appropriate for designating unique sections, like a navigation section. Classes are declared with a period (.red) while IDs are declared with a pound sign (#navi). To reference an ID in your HTML, you would use the ID parameter (&lt;div id=&quot;navi&quot;&gt; &lt;/div&gt;).</p>
+                <div class="h2">
+                  <p class="noMargin">Inline vs. Block</p>
+                </div>
+                <p>All elements in HTML can be either be displayed as &quot;inline&quot; elements or &quot;block&quot; elements. An inline element is an element that takes up only as much space as the content requires. Examples of inline elements that you already know would be images and links.</p>
+                <p>A block element will, by default, fill the amount of space it is given horizontally, while only taking as much as it needs vertically. You may give a block element specific width and height sizes, whereas you cannot with an inline element. Examples of block elements that you already know are p, h1-h6, lists.</p>
+                <p>Now to add to your tag vocabulary: span and div. These two are generic container tags that do not do anything visually by default and are used specifically for people to apply classes and IDs with, in case they need to apply styles to more than a particular set of tags. &quot;span&quot; is your generic inline element while &quot;div&quot; is your generic block element.</p>
+                <div class="h2">
+                  <p class="noMargin">Descendent Selectors</p>
+                </div>
+                <p>Let's say you have HTML that looks ... kinda like this.</p>
+                <pre class="code">&lt;div id=&quot;redsection&quot;&gt;
+   &lt;h1 class=&quot;title&quot;&gt;A cool title&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;bluesection&quot;&gt;
+   &lt;h1 class=&quot;title&quot;&gt;Another cool title&lt;/h1&gt;
+&lt;/div&gt;</pre>
+                <p>So let's say I wanted the color of the h1 to be different between the two sections. But they're both named with the same class name. Instead of using two separate classes, you can access the specific title class and change it alone.</p>
+                <pre class="code">#redsection .title { color: white; }
+#bluesection .title { color: silver; }</pre>
+                <p>This code effectively targets the title class in the redsection and makes the font color white, where the title in the bluesection will be silver. You can do this with tags as well as classes (i.e. #redsection h1 { color: white; } ).</p>
+                <div class="h2">
+                  <p class="noMargin">Box Model</p>
+                </div>
+                <p>When elements are rendered in web browsers, they take the form of a box. The basic form of the box, from exterior to interior is margin -&gt; border -&gt; padding -&gt; your content. See this diagram for further clarification: <a href="http://128.32.250.91/~kass/062806/2dboxmodel.jpg">2dboxmodel</a>.</p>
+                <p>To change margin or padding, you can use the margin and padding properties.</p>
+                <pre class="code">h1 {
+   margin: 20px;           /* applies 20px worth of space all around the box */
+   border: 1px solid blue; /* applies a 1px solid blue border */
+   padding: 10px;          /* applies 10px worth of space between the
+                              content and the border */
+}
+
+p {
+   margin: 5px 10px 7px 15px; 
+              /* order of values refers to: top right bottom left */
+   padding: 15px 20px; 
+              /* or if you just do two values: top/bottom left/right */
+}</pre>
+              </div>
+            </div>
+          </div>
+          <div class="deletion">3 posts deleted.</div>
+          <div class="odd">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/28 21:18:29 PDT by <a href="The%20Internet%20Classroom%20-%20Max%20Santana.html">Max Santana</a><br>Edited at 2006/06/28 21:21:50 PDT</td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48734614/Max Santana" width="64" height="64" alt="[Max Santana's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <p>Kass... you need a sig... XP<br>I don't think avatars are supposed to extend outside the post box.</p>
+                <p class="noMargin">And now that I mention it, the text isn't supposed to extend past the post box either....<br>overflow?</p>
+              </div>
+              <div class="sig" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <div class="forumCode" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                  <p class="noMargin">&quot;Who? What does it matter? Or…do you need a name to describe me? A definition by words is merely a means to deceive oneself. It's meaningless before the truth. What matters is how you perceive things. The slightest shift, then life and death no longer have any meaning.&quot; ~ Virgil, Xenosaga</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/28 21:26:37 PDT by <a href="The%20Internet%20Classroom%20-%20aqhong.html">aqhong</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p>What? Neither the avatar nor the text is extending out of the text box for me. There's supposed to be a min-height set on these post &lt;div&gt;s to prevent that from happening.</p>
+                <p class="noMargin">Also, Kass does not need a sig. Nobody <i>needs</i> a sig :P</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/28 23:01:42 PDT by <a href="The%20Internet%20Classroom%20-%20Max%20Santana.html">Max Santana</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48734614/Max Santana" width="64" height="64" alt="[Max Santana's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <p class="noMargin">Really? *fiddles with settings*<br>It's not changing for me. But it might be the same issue as last time (though that problem seems to have been fixed between now and then).</p>
+              </div>
+              <div class="sig" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <div class="forumCode" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                  <p class="noMargin">&quot;Who? What does it matter? Or…do you need a name to describe me? A definition by words is merely a means to deceive oneself. It's meaningless before the truth. What matters is how you perceive things. The slightest shift, then life and death no longer have any meaning.&quot; ~ Virgil, Xenosaga</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/29 00:09:21 PDT by <a href="The%20Internet%20Classroom%20-%20kass.html">kass</a><br>Edited at 2006/06/29 00:10:22 PDT</td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48199547/kass" width="64" height="64" alt="[kass's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <p>Max ...</p>
+                <p>... are you using IE?</p>
+                <p class="noMargin">[edit] Nevermind. Just checked in IE. Site actually looks okay.  :P  Dunno what your problem is, Max.  &gt;_&gt;</p>
+              </div>
+            </div>
+          </div>
+          <div class="odd">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/29 00:11:28 PDT by <a href="The%20Internet%20Classroom%20-%20aqhong.html">aqhong</a></td>
+                </tr>
+              </table>
+              <div class="forumCode">
+                <p>*readies the guillotine*</p>
+                <p class="noMargin">Haha, kidding. Even in IE, the _height hack applies, so I have no idea what's up with Max :P</p>
+              </div>
+            </div>
+          </div>
+          <div class="even">
+            <div class="post" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <table class="details" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <col class="column0">
+                <tr class="even">
+                  <td>2006/06/29 00:16:06 PDT by <a href="The%20Internet%20Classroom%20-%20Max%20Santana.html">Max Santana</a></td>
+                </tr>
+              </table>
+              <img src="http://tol2mac8.soe.berkeley.edu:8081/tic/48734614/Max Santana" width="64" height="64" alt="[Max Santana's avatar]" class="avatar" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+              <div class="forumCode">
+                <p class="noMargin">I thought I told you guys I use Safari 1.3.2</p>
+              </div>
+              <div class="sig" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                <div class="forumCode" style="color: #D38D37; border-color: #D38D37; background-color: #F7EBDB;">
+                  <p class="noMargin">&quot;Who? What does it matter? Or…do you need a name to describe me? A definition by words is merely a means to deceive oneself. It's meaningless before the truth. What matters is how you perceive things. The slightest shift, then life and death no longer have any meaning.&quot; ~ Virgil, Xenosaga</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deletion">2 posts deleted.</div>
+          <table class="buttons">
+            <col class="column0">
+            <tr class="even">
+              <td>
+                <form action="" method="get" accept-charset="UTF-8" class="pageNavigator">
+                  <p>Page: <select name="page" size="1" onchange="this.form.submit();"><option value="1" selected="selected">1</option></select></p>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="navigator">
+        <p><a href="The%20Internet%20Classroom%20-%20Main.html"><img src="minus.png" alt="-">Main</a></p>
+        <div class="children">
+          <p><a href="The%20Internet%20Classroom%20-%20Introduction.html"><img src="plus.png" alt="+">Introduction</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Weblogs-2.html"><img src="blank.png" alt=" ">Weblogs</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Lecture%20Notes-2.html"><img src="blank.png" alt=" ">Lecture Notes</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Projects-2.html"><img src="blank.png" alt=" ">Projects</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Class%20Pix-2.html"><img src="plus.png" alt="+">Class Pix</a></p>
+          <p><a href="The%20Internet%20Classroom%20-%20Forums.html"><img src="minus.png" alt="-">Forums</a></p>
+          <div class="children">
+            <p><a href="The%20Internet%20Classroom%20-%20Tech%20Support.html"><img src="blank.png" alt=" ">Tech Support</a></p>
+            <p><a href="The%20Internet%20Classroom%20-%20Class%20Discussion.html"><img src="blank.png" alt=" ">Class Discussion</a></p>
+            <div class="children"></div>
+            <p><a href="The%20Internet%20Classroom%20-%20Off%20Topic.html"><img src="blank.png" alt=" ">Off Topic</a></p>
+          </div>
+          <p><a href="The%20Internet%20Classroom%20-%20Chatroom.html"><img src="blank.png" alt=" ">Chatroom</a></p>
+        </div>
+        <p><a href="The%20Internet%20Classroom%20-%20User%20List.html">User List</a></p>
+        <p><a href="The%20Internet%20Classroom%20-%20Activity%20Tracker.html">Activity Tracker</a></p>
+      </div>
+      <div class="login">
+        <p>Not logged in.</p>
+        <p class="noMargin"><a href="/login/login?path=tic/forums/discussion/10">Log In</a><br><a href="/login/register?path=tic/forums/discussion/10">Create New User</a></p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div class="text">All TIC materials copyright © 2006 Cynthia Nie and Trevor Ridinger</div>
+      <div class="powered-by"><a href="http://evlan.org/server/">Powered by Io Community Manager, Evlan, and FreeBSD</a></div>
+    </div>
+  </body>
+</html>
